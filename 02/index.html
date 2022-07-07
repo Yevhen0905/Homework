@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 2 Semantics in HTML</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>HTML5 Семантичні елементи</h1>
+            <p>Семантичний елемент чітко описує його значення як для браузера, так і
+               для розробника.
+            </p>
+            <p>Приклади не <strong>семантичних</strong> елементів: &ltdiv&gt і &ltspan&gt- нічого не говорить
+               про його вміст.
+            </p>
+            <p>Приклади <strong>семантичних</strong> елементів: &ltform&gt, &lttable&gtі &ltarticle&gt- чітко
+               визначає його зміст.
+            </p>
+        </div>
+    </header>
+    <section>
+        <div>
+            <h2>Підтримка браузерів</h2>
+            <img src="./assets/img/1.jpg" alt="браузери">
+            <p>Семантичні елементи HTML5 підтримуються у всіх сучасних браузерах.</p>
+            <p>Крім того, ви можете "навчити" старих браузерів, як обробляти "невідомі
+               елементи".
+            </p>
+            <p>Прочитайте про це в <a href="#" target="_blank">підтримці браузера HTML5</a>
+            </p>
+        </div>
+    </section>
+    <section>
+        <div>
+            <h2>Нові семантичні елементи в HTML5</h2>
+            <p>HTML5 пропонує нові семантичні елементи для визначення різних частин
+               веб-сторінки:
+            </p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#section">&ltsection&gt</a></li>
+                <li><a href="#article">&ltarticle&gt</a></li>
+                <li><a href="#header">&ltheader&gt</a></li>
+                <li><a href="#footer">&ltfooter&gt</a></li>
+            </ul>
+        </nav>
+    </section>
+    <section id="section">
+        <div>
+            <h2>HTML5 &ltsection&gt елемент</h2>
+            <p>Елемент &ltsection&gt визначає розділ в документі.</p>
+            <p>Згідно з документацією в3к'с HTML5: "розділ представляє собою
+               тематичну угруповання контенту, зазвичай з заголовком".</p>
+            <p>Домашня сторінка зазвичай може бути розділена на розділи для
+               ознайомлення, змісту і контактної інформації.
+            </p>
+        </div>
+        <img src="./assets/img/image-010.jpg" alt="Приклад">   
+    </section>
+    <section id="article">
+        <div>
+            <h2>HTML5 &ltarticle&gt елемент</h2>
+            <p>Елемент &ltarticle&gt визначає незалежний, автономний вміст.</p>
+            <p>Стаття повинна мати сенс самостійно, і вона повинна мати можливість
+               читати його незалежно від іншої частини веб-сайту.</p>
+            <p>Приклади того, де можна використовувати елемент &ltarticle&gt:</p> 
+            <ul>
+                <li>Повідомлення на форумі</li>
+                <li>блозі</li>
+                <li> Газетна стаття</li>
+            </ul>
+        </div>   
+        <img src="./assets/img/image-011.jpg" alt="Приклад">
+    </section>
+    <section id="header">
+        <div>
+            <h2>HTML5 &ltheader&gt елемент</h2>
+            <p>Елемент &ltheader&gt задає заголовок для документа або розділу.
+            </p>
+            <p>Елемент &ltheader&gt повинен використовуватися в якості контейнера для
+            вступного змісту.</p>
+            <p>В одному документі може бути кілька елементів &ltheader&gt.</p>
+            <p>У наступному прикладі визначається заголовок для статті:</p>
+        </div>
+        <img src="./assets/img/image-012.jpg" alt="Приклад">
+    </section>
+    <section id="footer">
+        <div>
+            <h2>HTML5 &ltfooter&gt елемент</h2>
+            <p>Елемент &ltfooter&gt вказує нижній колонтитул для документа або розділу.</p>
+            <p>Нижній колонтитул зазвичай містить автора документа, інформацію про
+               авторське право, посилання на умови використання, контактні дані і т.д.
+            </p>
+            <p>В одному документі може бути кілька елементів &ltfooter&gt </p>
+        </div>
+        <img src="./assets/img/image-013.jpg" alt="Приклад">
+    </section>
+    <footer>
+        <h3>My CV</h3>
+        <iframe src="https://yevhen0905.github.io/Homework/" frameborder="0" width="700px" height="300px"></iframe>
+        <h3>Front-End розробка. Сучасні тренди</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dEBVe8Ij7JU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </footer>
+</body>
+</html>
