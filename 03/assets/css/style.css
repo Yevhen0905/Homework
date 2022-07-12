@@ -41,10 +41,6 @@ p {
     font-size: 21px;
 }
 
-span {
-    word-spacing: 10px;
-}
-
 h1 {
     width: 970px;
     font-size: 48px;
@@ -60,11 +56,6 @@ h1 {
     height: 387px;
 }
 
-/*.navigation {
-    display: flex;
-    justify-content: space-between;
-}*/
-
 .about {
     height: 400px;
     background-color: #E5E5E5;
@@ -76,10 +67,6 @@ h1 {
     width: 480px;
     height: 210px;
    margin-left: 245px;
-}
-
-.text p {
-
 }
 
 .skills {
