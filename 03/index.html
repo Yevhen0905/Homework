@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Denis Novik</title>
-    <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
     <header class="header">
@@ -13,39 +13,38 @@
             <div class="container">
                 <ul class="nav_list">
                     <li class="nav_item">
-                        <a href="#first" class="nav_item_link">Home</a>
+                        <a class="nav_item_link active" href="#first">Home</a>
                     </li>
                     <li class="nav_item">
-                        <a href="#about" class="nav_item_link">About me</a>
+                        <a class="nav_item_link" href="#about">About me</a>
                     </li>
                     <li class="nav_item">
-                        <a href="#about" class="nav_item_link">About me</a>
+                        <a class="nav_item_link" href="#skills">Skills</a>
                     </li>
                     <li class="nav_item">
-                        <a href="#skills" class="nav_item_link">Skills</a>
+                        <a class="nav_item_link" href="#portfolio">Portfolio</a>
                     </li>
                     <li class="nav_item">
-                        <a href="#portfolio" class="nav_item_link">Portfolio</a>
+                        <a class="nav_item_link" href="#footer">Contacts</a>
                     </li>
-                    <li class="nav_item">
-                        <a href="#footer" class="nav_item_link">Contacs</a>
-                    </li>
-                </ul>   
+                </ul>
             </div>
         </nav>
     </header>
     <section id="first" class="first">
-        <div class="container"></div>
+        <div class="container">
             <h1 class="first_name">Denis Novik</h1>
-            <img src="./assets/img/photox940.jpg" alt="" class="first-image">
+            <div class="first_name_wrapper">
+                <img src="./assets/img/hero_banner.jpg" alt="" class="first_img">
+            </div>
         </div>    
     </section>
     <section id="about" class="about">
         <div class="container">    
-            <h3 class="count">
-                About me
-            </h3>
-            <div class="text">
+            <div class="about_content">
+                <h2 class="count">
+                    About me
+                </h2>
                 <p class="about_text">
                     <span class="span"> Hi, I'm Denis – UX/UI designer from Minsk.</span>
                    I'm interested in design and everything connected with it.
@@ -61,64 +60,144 @@
     </section>
     <section id="skills" class="skills">
         <div class="container">
-            <h3 class="count">
+            <h2 class="count">
                 Skills
-            </h3>
+            </h2>
             <p class="skill_text">
                  I work in such programs as
             </p>
             <div class="skill_applic">
                 <div class="applic">
-                    <img src="./assets/img/Ps.png" alt="" class="applic_image">
-                    <p class="applic_text">Adobe Photoshop</p>
-                    <img src="./assets/img/stars1.png" alt="" class="applic_star">   
-                </div>     
-                <div class="applic">
-                    <img src="./assets/img/Ai.png" alt="" class="applic_image">
-                    <p class="applic_text">Adobe Illustrator</p>
-                    <img src="./assets/img/stars 2.png" alt="" class="applic_star"> 
+                    <div class="applic_img">
+                        <img src="./assets/img/ps.svg" alt="Photoshop">
+                    </div>
+                    <p class="applic_text">
+                        Adobe Photoshop
+                    </p>
+                    <div class="applic_rating">
+                        <span class="applic_star"></span>
+                        <span class="applic_star"></span>
+                        <span class="applic_star grey"></span>
+                        <span class="applic_star grey"></span>
+                        <span class="applic_star grey"></span>
+                    </div>   
                 </div>
                 <div class="applic">
-                    <img src="./assets/img/Ae.png" alt="" class="applic_image">
-                    <p class="applic_text">Adobe After Effects</p>
-                    <img src="./assets/img/stars 3.png" alt="" class="applic_star"> 
+                    <div class="applic_img">
+                        <img src="./assets/img/Ai.svg" alt="Ai">
+                    </div>
+                    <p class="applic_text">
+                        Adobe Illustrator
+                    </p>
+                    <div class="applic_rating">
+                        <span class="applic_star"></span>
+                        <span class="applic_star"></span>
+                        <span class="applic_star"></span>
+                        <span class="applic_star grey"></span>
+                        <span class="applic_star grey"></span>
+                    </div>   
                 </div>
                 <div class="applic">
-                    <img src="./assets/img/Figma.png" alt="" class="applic_image">
-                    <p class="applic_text">Figma</p>
-                    <img src="./assets/img/stars 4.png" alt="" class="applic_star"> 
+                    <div class="applic_img">
+                        <img src="./assets/img/Ae.svg" alt="Ae">
+                    </div>
+                    <p class="applic_text">
+                        After Effects
+                    </p>
+                    <div class="applic_rating">
+                        <span class="applic_star"></span>
+                        <span class="applic_star"></span>
+                        <span class="applic_star"></span>
+                        <span class="applic_star"></span>
+                        <span class="applic_star grey"></span>
+                    </div>   
+                </div>
+                <div class="applic">
+                    <div class="applic_img">
+                        <img src="./assets/img/Figma.svg" alt="figma">
+                    </div>
+                    <p class="applic_text">
+                        Figma
+                    </p>
+                    <div class="applic_rating">
+                        <span class="applic_star"></span>
+                        <span class="applic_star"></span>
+                        <span class="applic_star"></span>
+                        <span class="applic_star"></span>
+                        <span class="applic_star"></span>
+                    </div>   
                 </div>
             </div>
         </div>
     </section>
     <section id="portfolio" class="portfolio">
         <div class="container" >
-            <h3 class="count">Portfolio</h3>
+            <h2 class="count">
+                Portfolio
+            </h2>
             <div class="shop_list">
                 <div class="shop_item">
-                    <img src="./assets/img/Fashion-Store.png" alt="" class="shop_image">
-                    <a href="#" target="_blank" class="shop_link">Online fashion store - Homepage</a>
+                    <div class="shop">
+                        <img src="./assets/img/Fashion-Store.jpg" alt="Fashion store" class="shop_image">
+                    </div>
+                    <div class="shop_link">
+                        <a href="https://md-fashion.com.ua/" target="_blank" class="shop_link_item">Online fashion store - Homepage</a>
+                    </div>
                 </div>
                 <div class="shop_item">
-                    <img src="./assets/img/reebok_web.png" alt="" class="shop_image">
-                    <a href="#" target="_blank" class="shop_link">Reebok Store - Concept</a>
+                    <div class="shop">
+                        <img src="./assets/img/reebok_web.jpg" alt="Reebok" class="shop_image">
+                    </div>
+                    <div class="shop_link">
+                        <a href="https://www.reebok.in.ua/" target="_blank" class="shop_link_item">Reebok Store - Concept</a>
+                    </div>
                 </div>
+
                 <div class="shop_item">
-                    <img src="./assets/img/braun-landing.png" alt="" class="shop_image">
-                    <a href="#" target="_blank" class="shop_link">Braun Landing Page - Concept</a>
+                    <div class="shop">
+                        <img src="./assets/img/braun-landing.jpg" alt="Braun" class="shop_image">
+                    </div>
+                    <div class="shop_link">
+                        <a href="https://braun-market.com.ua/" target="_blank" class="shop_link_item">Braun Landing Page - Concept</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <footer id="footer" class="footer">
         <div class="container ">   
-            <h3 class="count">Contacts</h3>
             <div class="contact">
-                <p class="contact_text">
-                    Want to know more or just chat? You are welcome!
-                </p>
+                <div class="contact_item">
+                    <h2 class="count">
+                        Contacts
+                    </h2>
+                    <p class="contact_text">
+                        Want to know more or just chat? You are welcome!
+                    </p>
+                </div>                    
                 <a href="#" class="btn" target="_blank">Send message</a>
-                <img src="./assets/img/Social-group.png" alt="" class="contact_icon">
+                <div class="contact_networks">
+                    <div class="contact_networks_link">
+                        <a href="https://ru.linkedin.com/" class="contact_link" target="_blank">
+                           <img src="./assets/img/linkedin.svg" alt="linkedin" class="contact_icon">
+                        </a>
+                    </div>
+                    <div class="contact_networks_link">
+                        <a href="https://www.instagram.com/" class="contact_link" target="_blank">
+                           <img src="./assets/img/instagram.svg" alt="instagram" class="contact_icon">
+                        </a>
+                    </div>
+                    <div class="contact_networks_link">
+                        <a href="https://www.behance.net/" class="contact_link" target="_blank">
+                           <img src="./assets/img/behance.svg" alt="behance" class="contact_icon">
+                        </a>
+                    </div>
+                    <div class="contact_networks_link">
+                        <a href="https://dribbble.com/" class="contact_link" target="_blank">
+                           <img src="./assets/img/dribbble.svg" alt="dribbble" class="contact_icon">
+                        </a>
+                    </div>
+                </div>    
                 <p class="contact_net">
                     <span class="span">Like me on</span> LinkedIn, Instagram, Behance, Dribble
                 </p>
