@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="account_container">
+            <div class="account">
+                <h2 class="account_header">Create an Account</h2>
+                <form class="account_form" action="#" method="get">
+                    <div class="account_name">
+                        <div class="label_input">
+                            <label class="label" for="firstname">First name</label>
+                            <input class="input" type="text" name="firstname" id="firstname">
+                        </div>                      
+                        <div class="label_input">
+                            <label class="label" for="lastName">Last Name</label>
+                            <input class="input" type="text" name="lastName" id="lastName">
+                        </div>
+                    </div>    
+                    <div class="account_email"> 
+                        <label class="label" for="mail">E-mail</label>
+                        <input class="input_mail" type="email" name="mail" id="mail">
+                        <p>We'll never share your email with anyone else.</p>
+                    </div>                   
+                    <div class="radio">
+                        <label class="radio_label">
+                            <input class="radio_imput" type="radio" name="radio" value="male">
+                            Male
+                        </label>
+                        <label class="radio_label">
+                            <input class="radio_imput" type="radio" name="radio" value="female">
+                            Female
+                        </label>
+                    </div>
+                    <div class="location">
+                        <div class="label_input">
+                            <label class="label" for="country">Country</label>
+                            <select class="country" name="country" id="country">
+                                <option value="s">Select</option>
+                                <option value="z">Zaporozhye</option>
+                                <option value="u">Uzhgorod</option>
+                            </select>
+                        </div>    
+                        <div class="label_input">
+                            <label class="label" for="city">City</label>
+                            <input class="country" type="text" name="city" id="city">
+                        </div>
+                    </div>
+                    <button type="submit" class="submit_form">Sign Up</button>
+                </form>
+                <div class="accept">
+                    <p>
+                        By clicking the 'Sign Up' button, you confirm that you accept our <a href="#">Terms of Use</a> and <a href="#">Privacy Police</a>
+                    </p>
+                </div>
+                <div class="login">
+                    <p class="login_text">Have an account? <a href="#" class="login_account">Log In</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile_container">
+            <div class="profile">
+                <h2 class="profile_header">Profile</h2>
+                <form action="#">
+                    <div class="card">
+                        <div class="avatar">
+                            <img class="avatar_img" src="https://www.perunica.ru/uploads/posts/2011-10/1319832745_0_6065c_b70de565_l.jpg" alt="#">
+                        </div>
+                        <div class="card_input">
+                            <input class="input_foto" type="text" name="foto" id="foto">
+                            <label class="card_label" for="foto">Up to 1 MB (300x300 px)</label>    
+                        </div>
+                        <div class="submit">
+                            <button type="submit" class="submit_card"></button>
+                        </div>
+                    </div>
+                    <div class="profile_name">
+                        <div class="label_input">
+                            <label class="label" for="firstname">First name</label>
+                            <input class="input" type="text" name="firstname" id="firstname">
+                        </div>                      
+                        <div class="label_input">
+                            <label class="label" for="mail">Email</label>
+                            <input class="input" type="email" name="mail" id="mail">
+                        </div>
+                    </div>
+                    <div class="location">
+                        <div class="label_input">
+                            <label for="country">Country</label>
+                            <select class="country" name="country" id="country">
+                                <option value="s">Select</option>
+                                <option value="z">Zaporozhye</option>
+                                <option value="u">Uzhgorod</option>
+                            </select>
+                        </div>    
+                        <div class="label_input">
+                            <label for="city">City</label>
+                            <input class="country" type="text" name="city" id="city">
+                        </div>
+                    </div>
+                    
+                    <div class="profile_phone">
+                        <div class="label_input">
+                            <label class="label" for="zipcode">Zip code</label>
+                            <input class="input" type="password" name="zipcode" id="zipcode">
+                        </div>                      
+                        <div class="label_input">
+                            <label class="label" for="phonenumber">Phone number</label>
+                            <input class="input" type="number" name="phonenumber" id="phonenumber">
+                        </div>
+                    </div>
+                    <button type="submit" class="submit_profile">Update</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

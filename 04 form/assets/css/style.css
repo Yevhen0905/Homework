@@ -1,0 +1,291 @@
+/*normalize*/
+
+body, html {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body *{
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    height: 700px;
+    font-size: 15px;
+    background-color: #E5E5E5;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 55px;
+}
+
+
+/*Create an Account*/
+
+.account_container {
+    max-width: 570px;
+    height: 590px;
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    color: #545454;
+    box-shadow: 2px 2px 5px 0px #000000;
+}
+
+.account {
+    width: 100%;
+    max-width: 500px;
+    margin: 35px 36px 0;
+    font-style: normal;
+}
+
+.account_header {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.33;
+    margin-bottom: 20px;
+    color: #1C1C1C;
+}
+
+.account_name {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.label_input {
+    width: 49%;
+    cursor: pointer;
+}
+
+.account_email {
+    margin-bottom: 20px;
+}
+
+.label {
+    cursor: pointer;
+}
+
+.input {
+    max-width: 245px;
+    width: 100%;
+    height: 38px; 
+    border: 1px solid #E4E4E4;
+    border-radius: 4px;
+    line-height: 24px;
+    margin-top: 10px;
+    padding: 7px 10px;
+}
+
+.input:focus {
+    border: 1px solid #007BFF;
+} 
+
+.input_mail {
+    width: 100%;
+    height: 38px;
+    border: 1px solid #E4E4E4;
+    border-radius: 4px;
+    line-height: 24px;
+    margin-top: 10px;
+    padding: 7px 10px;
+}
+
+.account_email p {
+    font-size: 13px;
+    color: #969696;
+}
+
+
+.radio {
+    margin-bottom: 20px;
+}
+
+.radio_label {
+    margin-right: 20px;
+}
+
+.location {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.country {
+    max-width: 245px;
+    width: 100%;
+    height: 38px; 
+    border: 1px solid #E4E4E4;
+    border-radius: 4px;
+    line-height: 24px;
+    color: #545454;
+    margin-top: 10px;
+    padding: 7px 10px;
+}
+
+
+
+.submit_form {
+    width: 100%;
+    height: 38px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.accept {
+    font-size: 13px;
+    color: #969696;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto 20px;
+    text-align: center;
+}
+
+
+.login {
+    margin: 0 auto;
+    text-align: center;
+    line-height: 22px;
+    border-top: 1px solid #E4E4E4;
+}
+
+.login_account {
+    font-weight: 500;
+}
+
+
+/*profile*/
+
+.profile_container {
+    max-width: 570px;
+    height: 590px;
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    color: #545454;
+    box-shadow: 2px 2px 5px 0px #000000;
+}
+
+.profile_header {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.33;
+    margin-bottom: 20px;
+    color: #1C1C1C;
+}
+
+.profile {
+    width: 100%;
+    max-width: 500px;
+    margin: 35px 36px 0;
+    font-style: normal;
+}
+
+.card {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    margin-right: 20px;
+}
+
+.avatar img {
+    width: 100%;
+    border-radius: 50px;
+}
+
+.card_input {
+    padding-top: 20px;
+}
+
+.input_foto {
+    display: block;
+    max-width: 138px;
+    height: 30px;
+    border: 1px solid #E4E4E4;
+    border-radius: 4px;
+    line-height: 24px;
+    margin-bottom: 9px;
+    padding: 7px 10px;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/38/38967.png');
+    background-size: 10px;
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+}
+
+.card_label {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #969696;
+}
+
+.submit {
+    padding-top: 20px;
+}
+
+.submit_card {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #E4E4E4;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMIAAAEDCAMAAABQ/CumAAAAb1BMVEX///8AAAAfHx/7+/tOTk64uLjc3NyWlpZfX1+Dg4PLy8vq6urg4OB6enqysrJycnKlpaXS0tLl5eWqqqrx8fGenp4RERFqampXV1cICAiNjY2AgIAzMzNubm7Nzc0ZGRkqKio8PDxDQ0PBwcEvLy+ane9pAAADXElEQVR4nO3d4W6iQBRAYaYogoJWC0Vta23t+z/jtrvZbDsD4uiFO2TP+WsT75c6oEAyUUREREREROMo9k574u/FSVXU24ln27SYrUvt2X9Xzt7M1d1lG+35o7i6fv4/ZcqfqMXkVsHnfyLRFCSvtws+O+kJ8p2IwJi5lqA8CgmM0VrUKzGBedMRzOUExjyoEAQORv/aaQjWkgJjlgqEQpaQKhDeZAlm+JN0/ihMWA9OEF4KGsckcUIlO95pVqw6SqUJ711vWeyn68sWzGb2IT2dXMei+2tt+ST11a2v6o7vU/M77Qm7251d+A/a411W1i64157t0p7aBCftyS6v5Qi8kD7f9lnzuVzwF0z/PTcJEu2p/Jo2EIS/PPddw7+hHNNK+Cp3CKK/hIfIPcHttUfyrXYIL9oj+eYuhq32SL492oLYvqSSZoHlnLY6CYqXapvLvQlNpw7VnFOv/QcQBghCCEEIIQghBCGEIITQf0mo8iSo8mkXYXy/2tw71bX2SL4dHcKT9ki+bR3CUnsk39yL2wvtkXw7uAct8VuYPddw3HUOWmE3ayDE79pTedV4B/qgPZVPLXc9R3RluPXRn9Gs6Of2BxlGYjiee9Q7057uktLzD5McZJ7/7bPup/iWAT8IY8xrddHzPHm1eg7w5uHjR115Pf1mr2z7bGjfXryzXl/Yz9TYdyjtm8T2G9jfFibezx9CgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECB4EewNl5w9r2yCveX0fnDCprr/kb3XT/zw8/XK3sXlZL1ub3DRP6H3IEQQJIIQQZAIQgRBIggRBIkgRC7B3QW35+QJ9XQ5aFN7t2Z/wosJLHc/566C21q19ibYH0X1Mm/CWntku6k3IbIvomi38CcEthj8l0IUbbSH/tn8CoJzuU01/0PqV2VIm8ImVxHca456tewL3t299uR/s6+3js/gf1b71mmnPb654VP0p4V9DX3wtleu5G8lheaRqT7cDPiqnO9X6WTw0pfsdG5ree/iwZOcnoiIiIiIPPoF3ZOgvjyJ61cAAAAASUVORK5CYII=');
+    background-size: 10px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+
+.profile_name {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.profile_phone {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.submit_profile {
+    width: 150px;
+    height: 38px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    color: #FFFFFF;
+}
+
