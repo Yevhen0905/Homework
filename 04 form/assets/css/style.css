@@ -82,7 +82,6 @@ body {
 }
 
 .input {
-    max-width: 245px;
     width: 100%;
     height: 38px; 
     border: 1px solid #E4E4E4;
@@ -129,7 +128,6 @@ body {
 }
 
 .country {
-    max-width: 245px;
     width: 100%;
     height: 38px; 
     border: 1px solid #E4E4E4;
@@ -224,25 +222,36 @@ body {
 }
 
 .input_foto {
-    display: block;
-    max-width: 138px;
-    height: 30px;
-    border: 1px solid #E4E4E4;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.card_label {
+    width: 138px;
+    background-color: #FFFFFF;
     border-radius: 4px;
-    line-height: 24px;
-    margin-bottom: 9px;
-    padding: 7px 10px;
-    background-image: url('https://cdn-icons-png.flaticon.com/512/38/38967.png');
-    background-size: 10px;
+    border: 1px solid #E4E4E4;
+    height: 30px;
+    font-size: 13px;
+    line-height: 18px;
+    color: #fff;
+    padding: 10px 7px;
+    text-transform: uppercase;
+    display: block;
+    cursor: pointer; 
+    background-image: url(https://img.freepik.com/premium-vector/photo-camera-vector-sign-icon-digital-camera-symbol-flat-design-style_231786-3985.jpg);
+    background-size: 25px;
     background-repeat: no-repeat;
     background-position: 95% 50%;
 }
 
-.card_label {
+.card_text {
+    margin: 0 auto;
+    color: #969696;
     font-size: 13px;
     font-weight: 400;
     line-height: 18px;
-    color: #969696;
 }
 
 .submit {
