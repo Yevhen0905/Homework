@@ -1,0 +1,253 @@
+@use 'reset';
+@use 'font-face';
+
+@mixin text-styling($ff, $fs, $fw, $fz, $lh, $ta) {
+font-family: $ff;
+font-style: $fs;
+font-weight: $fw;
+font-size: $fz;
+line-height: $lh;
+text-align: $ta;
+}
+
+$color-gold: #FFCC00;
+$border-gold: 1px solid #FFCC00;
+
+
+.header {
+    margin-bottom: 40px;
+
+    &_text {
+        @include text-styling('Raleway', normal, 500, 18px, 24px, center);
+        text-transform: uppercase;
+        color: #898F8F;
+        margin-top: 120px;
+        margin-bottom: 15px;
+    }
+
+    &_title {
+        @include text-styling('Roboto', normal, 900, 60px, 66px, center);
+        text-transform: uppercase;
+        color: $color-gold;
+        margin-bottom: 40px;
+    }
+
+    &_image {
+        width: 100%;
+        max-width: 450px;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+    }
+
+    &_line_left {
+        position: absolute;
+        width: 210px;
+        height: 0px;
+        border-top: $border-gold;
+        top: 10px;
+        left: 0;
+    }
+
+    &_line_right {
+        position: absolute;
+        width: 210px;
+        height: 0px;
+        border-top: $border-gold;
+        top: 10px;
+        right: 0;
+    }
+}
+
+.profile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1060px;
+}   
+
+.slider {
+    padding-bottom: 70px;
+
+    &_title {
+        @include text-styling('Roboto', normal, 900, 36px, 42px, center);
+        text-transform: capitalize;
+        color: #666666;
+        margin-bottom: 30px;
+    }
+
+    &_text {
+        @include text-styling('Raleway', normal, 400, 24px, 36px, center);
+        text-transform: capitalize;
+        color: #666666;
+        margin-bottom: 30px;
+    }
+
+    &_left {
+        width: 50%;
+        padding: 80px 0;
+        border-right: $border-gold;
+        position: relative;
+     }
+
+     &_right {
+        width: 50%;  
+        padding: 70px 0 0 100px;;
+    }
+
+    &_divider {
+        display: block;
+        text-align: -webkit-center;
+    }
+
+    &_social {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    &_content {
+        @include text-styling('Raleway', normal, 500, 14px, 24px, center);
+        color: #333333;
+        padding: 0 20px;
+        margin-bottom: 20px;
+    }
+
+    &_decor {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    &_btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+%angle {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.angle_top_left {
+    @extend %angle;
+    border-top: $border-gold;
+    border-left: $border-gold;
+    top: 65px;
+    left: -15px;
+}
+
+.angle_top_right {
+    @extend %angle;
+    border-top: $border-gold;
+    border-right: $border-gold;
+    top: 65px;
+    right: 99px;
+}
+
+.angle_bottom_left {
+    @extend %angle;
+    border-bottom: $border-gold;
+    border-left: $border-gold;
+    bottom: 67px;
+    left: -15px;
+}
+
+.angle_bottom_right {
+    @extend %angle;
+    border-bottom: $border-gold;
+    border-right: $border-gold;
+    bottom: 67px;
+    right: 99px;
+}
+
+.divider {
+    border-top: $border-gold;
+    max-width: 100px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+%link {
+    height: 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.social {
+    border: 1px solid #CCCCCC;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    position: relative;
+    transition: all 0.3s ease;
+    &:hover {
+        border: 3px solid $color-gold;
+        border-radius: 50%;
+    }
+
+    &_link_facebook {
+        width: 7px;
+        @extend %link;
+    }
+
+    &_link_twitter {
+        width: 15px;
+        @extend %link;
+    }
+
+    &_link_google {
+        width: 20px;
+        @extend %link;
+    }
+
+    &_link_linkedin {
+        width: 12px;
+        @extend %link;    }
+}
+
+%decor {
+    display: inline-block;
+    border-top: 4px solid $color-gold;
+    width: 100%;
+}
+
+.decor {
+    @extend %decor;
+    max-width: 20px;
+
+    &_left {
+        @extend %decor;
+        max-width: 10px;
+        margin-right: 5px;
+    }
+
+    &_right {
+        @extend %decor;
+        max-width: 10px;
+        margin-left: 5px;
+    }    
+}
+
+.btn {
+    @include text-styling('Open Sans', normal, 700, 14px, 24px, center);
+    text-transform: uppercase;
+    background-color: inherit;
+    color: #666666;
+    border: $border-gold;
+    padding: 5px 10px;   
+    cursor: pointer; 
+}
+
+
+

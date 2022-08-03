@@ -98,18 +98,6 @@ ul,li {
     background: #7A7593;
 }
 
-.activ {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 534px;
-    height: 45px;
-}
-
-.activ:first-child {
-    font-size: 18px;
-}
-
 .text {
     color: #fff;
 }
@@ -126,15 +114,6 @@ ul,li {
 
 .span::after {
     content:')';
-}
-
-
-.press_blue:hover {
-    border-width: 2px 0;
-    border: solid #fff;
-    background: #625E77;    
-    box-shadow: 0 0 15px rgba(0,0,0.5,1);
-    transition: all .2s ease-in;
 }
 
 .press:hover{
@@ -169,10 +148,6 @@ ul,li {
 .item input:checked ~ .text {
     text-decoration: line-through;
    opacity: 0.5;
-}
-
-.item input:checked ~ .bord {
-    border: solid 
 }
 
 .item input:checked + .fake_checkbox::before {
