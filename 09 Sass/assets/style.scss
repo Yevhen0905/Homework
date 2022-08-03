@@ -1,5 +1,6 @@
 @use 'reset';
 @use 'font-face';
+@use 'iconmoon';
 
 @mixin text-styling($ff, $fs, $fw, $fz, $lh, $ta) {
 font-family: $ff;
@@ -12,7 +13,6 @@ text-align: $ta;
 
 $color-gold: #FFCC00;
 $border-gold: 1px solid #FFCC00;
-
 
 .header {
     margin-bottom: 40px;
@@ -174,14 +174,6 @@ $border-gold: 1px solid #FFCC00;
     margin-bottom: 30px;
 }
 
-%link {
-    height: 12px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 .social {
     border: 1px solid #CCCCCC;
     border-radius: 50%;
@@ -195,25 +187,33 @@ $border-gold: 1px solid #FFCC00;
         border: 3px solid $color-gold;
         border-radius: 50%;
     }
+}
 
-    &_link_facebook {
-        width: 7px;
-        @extend %link;
-    }
+%icon {
+    font-family: icomoon!important;
+    font-style: normal;
+    font-weight: 400;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #CCCCCC;
+}
 
-    &_link_twitter {
-        width: 15px;
-        @extend %link;
-    }
+.icon-facebook {
+    @extend %icon;
+}
 
-    &_link_google {
-        width: 20px;
-        @extend %link;
-    }
+.icon-twitter {
+    @extend %icon;
+}
 
-    &_link_linkedin {
-        width: 12px;
-        @extend %link;    }
+.icon-google-plus {
+    @extend %icon;
+}
+
+.icon-linkedin2 {
+    @extend %icon;
 }
 
 %decor {
@@ -246,7 +246,7 @@ $border-gold: 1px solid #FFCC00;
     color: #666666;
     border: $border-gold;
     padding: 5px 10px;   
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 
