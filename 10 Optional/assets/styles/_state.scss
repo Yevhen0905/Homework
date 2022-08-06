@@ -1,0 +1,48 @@
+$color-hover: #18B5DC;
+$color-background: #FFFFFF;
+
+.nav_item_link {
+    &:hover {
+        color: #18B5DC;
+    }
+}
+
+.social {
+    &:hover {
+        background-color: $color-hover;
+        .icon-twitter {
+                color: $color-background;
+                }
+        .icon-facebook {
+                    color: $color-background;
+                }
+        .icon-instagram {
+                    color: $color-background;
+                }
+        .icon-linkedin2 {
+                    color: $color-background;
+                }
+        .icon-telegram {
+                    color: $color-background;
+                }
+    }
+}
+
+.card_change {
+    &:hover {
+        background-color: $color-background;
+        .icon-twitter {
+            color: $color-hover;
+        }
+        .icon-facebook {
+            color: $color-hover;
+        }
+        .icon-instagram {
+            color: $color-hover;
+        }
+    }
+}
+
+.content_team_image:hover .card {
+    z-index: 0;
+}

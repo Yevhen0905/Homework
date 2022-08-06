@@ -1,0 +1,217 @@
+.header {
+  height: 80px;
+  border-bottom: 1px solid #BDBDBD;
+  padding: 9px 0;
+  background-color: #FFFFFF;
+}
+.header_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header_logo_text {
+  font-family: "Train One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 43px;
+  text-transform: uppercase;
+  color: #282528;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav_item {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #3C3C3C;
+  transition: all 0.3s ease;
+}
+
+.btn {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border: 1px solid #3C3C3C;
+  color: #3C3C3C;
+  background-color: inherit;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #18B5DC;
+  color: #FFFFFF;
+  border: 1px solid #18B5DC;
+}
+
+.content {
+  background-color: #F6F6F6;
+}
+.content_team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.content-wrapper {
+  padding: 150px 0;
+}
+.content_title {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 41px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  letter-spacing: 0.13em;
+  color: #3C3C3C;
+  margin-bottom: 60px;
+  position: relative;
+}
+.content_text {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+.content_text_item {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #3C3C3C;
+  width: 570px;
+}
+.content_team_image {
+  position: relative;
+  max-width: 270px;
+  transition: transform 2s ease;
+  margin-bottom: 20px;
+}
+.content_team_name {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #282528;
+}
+.content_team_text {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #646464;
+}
+.content_image {
+  display: block;
+  width: 270px;
+  height: 270px;
+}
+
+.divider {
+  display: block;
+  border-top: 4px solid #DDDBDB;
+  width: 45px;
+  height: 0;
+  position: absolute;
+  top: 61px;
+  left: 125px;
+}
+
+.footer_wrapper {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer_menu {
+  font-size: 18px;
+  line-height: 21.6px;
+}
+
+.footer_nav {
+  margin-top: 30px;
+  display: inline-block;
+}
+
+.footer_social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.social {
+  border: 1px solid #18B5DC;
+  background-color: #FFFFFF;
+  width: 42px;
+  height: 42px;
+  margin: 0 5px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.icon-telegram, .icon-linkedin2, .icon-instagram, .icon-facebook, .icon-twitter {
+  font-family: icomoon !important;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #18B5DC;
+}
+
+.card {
+  width: 270px;
+  height: 270px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+.card_social {
+  width: 270px;
+  height: 270px;
+  background-color: #18B5DC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card_change {
+  border: 1px solid #5DCBE6;
+  background-color: #5DCBE6;
+  width: 42px;
+  height: 42px;
+  margin: 0 5px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.card_icon {
+  color: #FFFFFF;
+}

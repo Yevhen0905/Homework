@@ -1,0 +1,39 @@
+.nav_item_link:hover {
+  color: #18B5DC;
+}
+
+.social:hover {
+  background-color: #18B5DC;
+}
+.social:hover .icon-twitter {
+  color: #FFFFFF;
+}
+.social:hover .icon-facebook {
+  color: #FFFFFF;
+}
+.social:hover .icon-instagram {
+  color: #FFFFFF;
+}
+.social:hover .icon-linkedin2 {
+  color: #FFFFFF;
+}
+.social:hover .icon-telegram {
+  color: #FFFFFF;
+}
+
+.card_change:hover {
+  background-color: #FFFFFF;
+}
+.card_change:hover .icon-twitter {
+  color: #18B5DC;
+}
+.card_change:hover .icon-facebook {
+  color: #18B5DC;
+}
+.card_change:hover .icon-instagram {
+  color: #18B5DC;
+}
+
+.content_team_image:hover .card {
+  z-index: 0;
+}
