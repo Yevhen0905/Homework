@@ -1,0 +1,36 @@
+@use 'font-face';
+
+body, html, p, h1, h2, h3, h6, ul, li {
+    width: 100%;
+    height: 100%;
+    font-size: 100%;    
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    line-height: 1;
+    background-color: #FFFFFF;
+}
+
+body *{
+    box-sizing: border-box;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;   
+    font-family: inherit; 
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+button {
+    font-family: inherit; 
+}
+
+ul {
+    list-style: none;
+}
