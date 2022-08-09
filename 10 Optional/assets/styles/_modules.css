@@ -1,5 +1,4 @@
 .header {
-  height: 80px;
   border-bottom: 1px solid #BDBDBD;
   padding: 9px 0;
   background-color: #FFFFFF;
@@ -29,7 +28,7 @@
 .nav_list {
   list-style: none;
   display: flex;
-  gap: 30px;
+  column-gap: 30px;
 }
 
 .nav_item {
@@ -68,8 +67,12 @@
 }
 .content_team {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  /* flex-wrap: wrap; */
+  /* justify-content: space-between; */
+  column-gap: 30px;
+}
+.content_team_item {
+  width: 100%;
 }
 .content-wrapper {
   padding: 150px 0;
@@ -83,12 +86,22 @@
   text-transform: uppercase;
   text-align: center;
   width: 100%;
-  max-width: 300px;
   margin: 0 auto;
   letter-spacing: 0.13em;
   color: #3C3C3C;
-  margin-bottom: 60px;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
   position: relative;
+}
+.content_title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  width: 45px;
+  height: 4px;
+  transform: translateX(50%);
+  background-color: #DDDBDB;
 }
 .content_text {
   display: flex;
@@ -128,19 +141,8 @@
   color: #646464;
 }
 .content_image {
-  display: block;
-  width: 270px;
-  height: 270px;
-}
-
-.divider {
-  display: block;
-  border-top: 4px solid #DDDBDB;
-  width: 45px;
-  height: 0;
-  position: absolute;
-  top: 61px;
-  left: 125px;
+  display: inline-block;
+  max-width: 100%;
 }
 
 .footer_wrapper {
@@ -188,16 +190,16 @@
 }
 
 .card {
-  width: 270px;
-  height: 270px;
+  width: 100%;
+  height: 100%;
   position: absolute;
   z-index: -1;
   top: 0;
   left: 0;
 }
 .card_social {
-  width: 270px;
-  height: 270px;
+  width: 100%;
+  height: 100%;
   background-color: #18B5DC;
   display: flex;
   justify-content: center;

@@ -10,7 +10,7 @@ $color-hover: #18B5DC;
 $color-background: #FFFFFF;
 
 .header {
-    height: 80px;
+    // height: 80px;
     border-bottom: 1px solid #BDBDBD;
     padding: 9px 0;
     background-color: $color-background;
@@ -38,7 +38,7 @@ $color-background: #FFFFFF;
 .nav_list {
     list-style: none;
     display: flex;
-    gap: 30px;
+    column-gap: 30px;
 }
 
 .nav_item {
@@ -69,8 +69,13 @@ $color-background: #FFFFFF;
 
     &_team {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        /* flex-wrap: wrap; */
+        /* justify-content: space-between; */
+        column-gap: 30px;
+    }
+
+    &_team_item {
+        width: 100%;
     }
 
     &-wrapper {
@@ -82,12 +87,24 @@ $color-background: #FFFFFF;
         text-transform: uppercase;
         text-align: center; 
         width: 100%;
-        max-width: 300px;
+        // max-width: 300px;
         margin: 0 auto;    
         letter-spacing: 0.13em;   
         color: #3C3C3C;
-        margin-bottom: 60px;
+        padding-bottom: 20px;
+        margin-bottom: 40px;
         position: relative;
+
+        &::before {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			right: 50%;
+			width: 45px;
+			height: 4px;
+			transform: translateX(50%);
+			background-color: #DDDBDB;
+		}
     }
 
     &_text {
@@ -121,21 +138,22 @@ $color-background: #FFFFFF;
     }
 
     &_image {
-        display: block;
-        width: 270px;
-        height: 270px;   
+        display: inline-block;
+        max-width: 100%;  
     }
 }
 
-.divider {
-    display: block;
-    border-top: 4px solid #DDDBDB;
-    width: 45px;
-    height: 0;
-    position: absolute;
-    top: 61px;
-    left: 125px;
-}
+// .divider {
+//     display: block;
+//     border-top: 4px solid #DDDBDB;
+//     width: 45px;
+//     height: 0;
+//     position: absolute;
+//     top: 61px;
+//     left: 125px;
+// }
+
+
 
 .footer_wrapper {
     padding: 40px 0;
@@ -202,15 +220,15 @@ $color-background: #FFFFFF;
 }
 
 .card {
-    width: 270px;
-    height: 270px;
+    width: 100%;
+    height: 100%;
     position: absolute;
     z-index: -1;
     top: 0;
     left: 0;
     &_social {
-        width: 270px;
-        height: 270px;
+        width: 100%;
+        height: 100%;
         background-color: $color-hover;
         display: flex;
         justify-content: center;
