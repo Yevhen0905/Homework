@@ -17,10 +17,28 @@ $color-text: #000000;
     padding: 0 15px;
 }
 
+.flex-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 .title {
     @include text-styling('Red Hat Display', normal, 600, 28px, 166%, 0.1em, $color-text);
+    margin-bottom: 50px;
 }
 
 .text {
     @include text-styling('Lato', normal, 400, 19px, 32px, 0.05em, #565656);
+}
+
+.section_wripper {
+    margin-bottom: 90px;
+}
+
+.image_wripper {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
 }

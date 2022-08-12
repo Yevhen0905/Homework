@@ -1,14 +1,19 @@
 @use 'font-face';
 
-body, html, p, h1, h2, h3, h6, ul, li {
-    width: 100%;
+body, html, h1, h2, h3, h6, ul {
+    // width: 100%;
     height: 100%;
     font-size: 100%;    
     padding: 0;
     margin: 0;
     font-family: sans-serif;
     line-height: 1;
-    background-color: #FFFFFF;
+    // background-color: #FFFFFF;
+}
+
+p {
+    margin: 0;
+    padding: 0;
 }
 
 body *{
