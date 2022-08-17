@@ -230,7 +230,7 @@ p {
     justify-content: space-between;
     border-top: 1px solid #BFBFBF;
     border-bottom: 1px solid #BFBFBF;
-    padding-top: 20px; 
+    margin-top: 20px; 
 }
 
 .flip-card {
