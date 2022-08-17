@@ -1,0 +1,13 @@
+
+.flip-card { 
+    background-color: transparent; 
+    perspective: 1000px; 
+}
+
+.card { 
+    max-width: 338px;
+    // -webkit-box-shadow: 4px 4px 27px -10px rgba(0,0,0,0.75);
+    // -moz-box-shadow: 4px 4px 27px -10px rgba(0,0,0,0.75);
+    // box-shadow: 4px 4px 27px -10px rgba(0,0,0,0.75);
+    border-radius: 20px;
+}
