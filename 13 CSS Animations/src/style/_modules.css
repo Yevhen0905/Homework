@@ -3,7 +3,7 @@
   perspective: 1000px;
 }
 
-.card {
+.card_item {
   box-shadow: 10px 10px 50px -10px rgba(0, 0, 0, 0.5);
   border-radius: 5px;
 }
@@ -24,12 +24,13 @@
 .flip-card-inner {
   position: relative;
   text-align: center;
-  transition: transform 0.5s ease;
+  transition: transform 0.5s;
   transform-style: preserve-3d;
+  animation: flipped 0.5s forwards;
 }
 
 .flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
+  animation: flipped_suit 0.5s forwards;
 }
 
 .flip-card-front, .flip-card-back {
@@ -41,4 +42,35 @@
 
 .flip-card-back {
   transform: rotateY(180deg);
+}
+
+.active {
+  animation-name: flipped_suit;
+  animation-duration: 1, 5s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-timing-function: ease-out;
+}
+
+@keyframes flipped {
+  0% {
+    transform: rotateY(180deg);
+  }
+  50% {
+    transform: rotateY(90deg) scale(1.1);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+@keyframes flipped_suit {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(90deg) scale(1.1);
+  }
+  100% {
+    transform: rotateY(180deg);
+  }
 }
