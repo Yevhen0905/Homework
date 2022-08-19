@@ -49,7 +49,7 @@
   animation-duration: 1, 5s;
   animation-iteration-count: 1;
   animation-direction: normal;
-  animation-timing-function: ease-out;
+  animation-timing-function: ease;
 }
 
 @keyframes flipped {
