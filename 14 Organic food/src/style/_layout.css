@@ -1,0 +1,39 @@
+.container {
+  width: 100%;
+  max-width: 1270px;
+  margin: 0 auto;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.pic {
+  background-color: #F3FBF8;
+}
+
+.indent:not(.indent:last-child) {
+  margin-bottom: 25px;
+}
+
+.title {
+  font-family: "Rosario";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 90px;
+  color: #222222;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.text {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #555555;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+}

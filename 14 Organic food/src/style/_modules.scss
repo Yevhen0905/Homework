@@ -1,0 +1,495 @@
+%position {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin text-styling($ff, $fs, $fw, $fz, $lh) {
+    font-family: $ff;
+    font-style: $fs;
+    font-weight: $fw;
+    font-size: $fz;
+    line-height: $lh;
+    }
+
+.header {
+    padding: 50px 0;
+}
+
+.header_wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .nav_list {
+        display: flex;
+        gap: 40px;
+    }  
+    
+    .nav_item {
+        @include text-styling('DM Sans', normal, 400, 18px, 24px);
+        color: #222222;
+    } 
+
+    .header_icon {
+        width: 56px;
+        height: 56px;
+    }
+
+    .header_press {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+
+            .header_search {
+                position: relative;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: #F3FBF8;
+
+                .icon_search {
+                    width: 24px;
+                    height: 24px;
+                    @extend %position
+                }
+            }
+
+            .header_buy {
+                display: inline-block;
+                position: relative;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: #F3FBF8;
+
+                .icon_buy {
+                    width: 24px;
+                    height: 24px;
+                    position: absolute;
+                    @extend %position
+                }
+            }
+
+            .btn {
+                @include text-styling('DM Sans', normal, 400, 18px, 20px);
+                color: #FFFFFF;
+                padding: 10px 23px;
+                background-color: #09A66D;
+                border: none;
+                border-radius: 8px;
+                cursor: pointer;
+            }
+    }
+}
+
+.first {
+    padding: 95px 0 35px;
+    background-image: url(../img/fresh-melientha-suavis.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+} 
+
+.first_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: 60px;
+
+    .first_img {
+        background-color: #F3FBF8;
+    
+        img {
+            width: 100%;
+        }
+    }
+
+    .arrow_link {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: -20px;
+        left: 43%;
+
+        
+    } 
+
+    .first_wripper {
+        display: inline-block;
+
+        .first_item {
+            background-color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            padding: 17px 46px 17px 35px;
+        
+            &:not(.first_item:last-child) {
+                margin-bottom: 30px;
+            }
+
+            .item_img {
+                position: relative;
+                width: 56px;
+                height: 56px;
+                border-radius: 50%;
+                background-color: #F3FBF8;
+                margin-right: 24px;
+            
+                svg {
+                    @extend %position;
+                }
+            }
+
+            .item_user {
+                display: inline-grid;
+
+                .item_user_number {
+                    @include text-styling('DM Sans', normal, 400, 48px, 48px);
+                    text-align: center;
+                    color: #000000;
+                }
+
+                .first_text {
+                    @include text-styling('DM Sans', normal, 400, 18px, 30px);
+                    text-align: center;
+                    color: #000000;   
+                }
+            }
+        }
+    }
+}
+
+.arrow_icon {
+    display: inline-block;
+    border-radius: 50px;
+    border: none;
+    width: 64px;
+    height: 64px;
+    background-color: #09A66D;
+    margin-left: 20px;
+    position: relative;
+    cursor: pointer;
+
+    svg {
+        @extend %position;
+    }
+}
+
+.second {    
+    padding: 140px 0;
+    background-image: url(../img/Vector16.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+}  
+
+.second_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.second_wripper {
+    display: inline-block;
+}
+
+.second_item {
+    display: flex;
+    align-items: center;
+    padding: 40px 60px;
+}
+
+.location_left {
+    text-align: left;
+    margin: 0 0 20px;
+}
+
+.second_item_img {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #F3FBF8;
+    margin-right: 24px;
+
+    svg {
+        @extend %position;
+    }
+}
+
+.second_title {
+    @include text-styling('DM Sans', normal, 700, 20px, 30px);
+    color: #222222;
+    margin-bottom: 8px;
+}
+
+.second_text {
+    @include text-styling('DM Sans', normal, 400, 14px, 20px);
+    color: #555555;
+}
+
+.second_item_text {
+    display: inline-grid;
+    width: 280px;
+    max-width: 100%;
+}
+
+.pic_white {
+    background-color: #FFFFFF;
+}
+
+.arrow_green {
+    position: relative;
+
+    svg {
+        position: absolute;
+        top: 0;
+        left: 235px;
+    }
+}
+
+.second_page {
+    display: inline-block;
+    text-align: center;
+    width: 48%;
+    position: relative;
+}
+
+.page_elipse {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+
+.restangle {
+    @extend %position;
+}
+
+.page_img {
+    width: 100%;
+    max-width: 372px;
+    position: absolute;
+    top: 34%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.page_half {
+    position: absolute;
+    top: -92px;
+    right: 0px;
+}
+
+.third_box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.third {
+    padding: 90px 0 145px;
+    background-image: url(../img/fresh-melientha-suavis.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.third_wrapper {
+    display: inline-block;
+    width: 48%;
+}
+
+.third_img {
+    width: 50%;
+    display: inline-block;
+
+    img {
+        width: 100%;
+    }
+}
+
+.third_link {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+
+.fourth {
+    padding: 95px 0 100px;
+}
+
+.fourth_box {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.fourth_wrapper {
+     width: 52%;
+}
+
+.fourth_name {
+    display: block;
+    @include text-styling('DM Sans', normal, 500, 30px, 36px);
+    color: #222222;
+    margin: 40px 0 5px;
+}
+
+.fourth_text {
+    width: 90%;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 73%;
+}
+
+.star_gold {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/fourth_star_gold.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    margin-right: 10px;
+}
+
+.half {
+    background-image: url(../img/fourth_star-gold_half.svg);
+}
+
+.fourth_btn {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: 1px solid #CCCCCC;
+    background-color: #FFFFFF;
+    position: relative;
+    cursor: pointer;
+
+    svg {
+        position: absolute;
+        top: 18px;
+        left: 21px;
+    }
+}
+
+.bg {
+   background: #09A66D;
+   margin-left: 40px;
+}
+
+.fourth_img {
+    display: inline-block;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: #F3FBF8;
+    position: relative;
+
+    .fourth_img_item {
+        position: absolute;
+        @extend %position;
+    }
+}
+
+.fifth {
+    padding: 50px 0 150px;
+}
+
+.fifth_box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.fifth_img {
+    position: relative;
+
+    .iphone_front {
+        position: absolute;
+        top: -30px;
+        left: 25px;
+    }
+}
+
+.fifth_wrapper {
+    width: 60%;
+}
+
+.fifth_btn {
+    background-color: #F3FBF8;
+    padding: 11px 24px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    @include text-styling('DM Sans', normal, 400, 18px, 18px);
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+.fifth_link {
+    margin-top: 50px;
+
+    > a {
+        margin-right: 25px;
+    }
+}
+
+.footer {
+    padding: 65px 0 120px;
+    background-color: #FCFEFD;
+}
+
+.footer_wripper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}    
+
+.footer_title {
+    @include text-styling('DM Sans', normal, 400, 24px, 31px);
+    color: #222222;
+    margin: 30px 0 40px;
+}
+
+.footer_text {
+    max-width: 345px;
+    width: 100%; 
+    text-align: left;
+    margin: 30px 0 0;
+}
+
+.footer_social {
+    display: flex;
+    gap: 50px;
+
+    %icon {
+        font-family: icomoon!important;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+    }
+    
+    .icon-twitter {
+        @extend %icon;
+    }
+    
+    .icon-facebook {
+        @extend %icon;
+    }
+    
+    .icon-instagram {
+        @extend %icon;
+    }
+}
+
+
