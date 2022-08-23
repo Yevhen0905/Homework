@@ -2,11 +2,6 @@
   color: #09A66D;
 }
 
-.social:hover a {
-  color: #09A66D;
-  transform: scale(1.2);
-}
-
 .arrow_green:hover svg {
   transform: scale(1.5);
 }
