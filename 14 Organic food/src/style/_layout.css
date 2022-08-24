@@ -10,6 +10,10 @@
   background-color: #F3FBF8;
 }
 
+.pic_white {
+  background-color: #FFFFFF;
+}
+
 .indent:not(.indent:last-child) {
   margin-bottom: 25px;
 }
@@ -22,7 +26,8 @@
   line-height: 90px;
   color: #222222;
   text-align: center;
-  margin-bottom: 20px;
+  margin: 0 0 20px;
+  text-transform: capitalize;
 }
 
 .text {

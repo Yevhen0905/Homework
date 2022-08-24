@@ -33,11 +33,6 @@
         color: #222222;
     } 
 
-    .header_icon {
-        width: 56px;
-        height: 56px;
-    }
-
     .header_press {
         display: flex;
         gap: 30px;
@@ -85,14 +80,20 @@
     }
 }
 
-.first {
+.header_icon {
+    width: 56px;
+    height: 56px;
+}
+
+.organic {
     padding: 95px 0 35px;
     background-image: url(../img/fresh-melientha-suavis.png);
     background-repeat: no-repeat;
     background-position: top left;
+    background-size: 550px;
 } 
 
-.first_box {
+.organic_box {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -100,7 +101,7 @@
     position: relative;
     margin-top: 60px;
 
-    .first_img {
+    .organic_img {
         background-color: #F3FBF8;
     
         img {
@@ -111,23 +112,21 @@
     .arrow_link {
         display: flex;
         align-items: center;
-        position: absolute;
+       position: absolute;
         top: -20px;
-        left: 43%;
-
-        
+        left: 43%;        
     } 
 
-    .first_wripper {
+    .organic_wripper {
         display: inline-block;
 
-        .first_item {
+        .organic_item {
             background-color: #FFFFFF;
             display: flex;
             align-items: center;
             padding: 17px 46px 17px 35px;
         
-            &:not(.first_item:last-child) {
+            &:not(.organic_item:last-child) {
                 margin-bottom: 30px;
             }
 
@@ -153,7 +152,7 @@
                     color: #000000;
                 }
 
-                .first_text {
+                .organic_text {
                     @include text-styling('DM Sans', normal, 400, 18px, 30px);
                     text-align: center;
                     color: #000000;   
@@ -179,28 +178,101 @@
     }
 }
 
-.second {    
+.service {    
     padding: 140px 0;
     background-image: url(../img/Vector16.svg);
     background-repeat: no-repeat;
     background-position: top right;
 }  
 
-.second_box {
+.service_box {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-}
 
-.second_wripper {
-    display: inline-block;
-}
+    .service_wripper {
+        display: inline-block;
 
-.second_item {
-    display: flex;
-    align-items: center;
-    padding: 40px 60px;
+        .service_item {
+            display: flex;
+            align-items: center;
+            padding: 40px 60px;
+
+            .service_item_img {
+                position: relative;
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                background-color: #F3FBF8;
+                margin-right: 24px;
+            
+                svg {
+                    @extend %position;
+                }
+            }
+
+            .service_item_text {
+                display: inline-grid;
+                width: 280px;
+                max-width: 100%;
+
+                .service_title {
+                    @include text-styling('DM Sans', normal, 700, 20px, 30px);
+                    color: #222222;
+                    margin-bottom: 8px;
+                }
+                
+                .service_text {
+                    @include text-styling('DM Sans', normal, 400, 14px, 20px);
+                    color: #555555;
+                }
+            }           
+        }
+
+        .arrow_green {
+            position: relative;
+        
+            svg {
+                position: absolute;
+                top: 0;
+                left: 235px;
+            }
+        }
+    }
+
+    .service_page {
+        display: inline-block;
+        text-align: center;
+        width: 48%;
+        position: relative;
+
+        .page_elipse {
+            display: inline-block;
+            text-align: center;
+            width: 100%;
+            position: relative;
+
+            .restangle {
+                @extend %position;
+            }
+            
+            .page_img {
+                width: 100%;
+                max-width: 372px;
+                position: absolute;
+                top: 34%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        .page_half {
+            position: absolute;
+            top: -92px;
+            right: 0px;
+        }        
+    }
 }
 
 .location_left {
@@ -208,148 +280,86 @@
     margin: 0 0 20px;
 }
 
-.second_item_img {
-    position: relative;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background-color: #F3FBF8;
-    margin-right: 24px;
-
-    svg {
-        @extend %position;
-    }
-}
-
-.second_title {
-    @include text-styling('DM Sans', normal, 700, 20px, 30px);
-    color: #222222;
-    margin-bottom: 8px;
-}
-
-.second_text {
-    @include text-styling('DM Sans', normal, 400, 14px, 20px);
-    color: #555555;
-}
-
-.second_item_text {
-    display: inline-grid;
-    width: 280px;
-    max-width: 100%;
-}
-
-.pic_white {
-    background-color: #FFFFFF;
-}
-
-.arrow_green {
-    position: relative;
-
-    svg {
-        position: absolute;
-        top: 0;
-        left: 235px;
-    }
-}
-
-.second_page {
-    display: inline-block;
-    text-align: center;
-    width: 48%;
-    position: relative;
-}
-
-.page_elipse {
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-    position: relative;
-}
-
-.restangle {
-    @extend %position;
-}
-
-.page_img {
-    width: 100%;
-    max-width: 372px;
-    position: absolute;
-    top: 34%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.page_half {
-    position: absolute;
-    top: -92px;
-    right: 0px;
-}
-
-.third_box {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.third {
+.special_items {
     padding: 90px 0 145px;
     background-image: url(../img/fresh-melientha-suavis.png);
     background-repeat: no-repeat;
     background-position: bottom right;
+    background-size: 550px;
 }
 
-.third_wrapper {
-    display: inline-block;
-    width: 48%;
-}
-
-.third_img {
-    width: 50%;
-    display: inline-block;
-
-    img {
-        width: 100%;
-    }
-}
-
-.third_link {
+.special_items_box {
     display: flex;
-    align-items: center;
-    margin-top: 50px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .special_items_img {
+        width: 50%;
+        display: inline-block;
+    
+        img {
+            width: 100%;
+        }
+    } 
+    
+    .special_items_wrapper {
+        display: inline-block;
+        width: 48%;
+
+        .special_items_link {
+            display: flex;
+            align-items: center;
+            margin-top: 50px;
+        }       
+    }   
 }
 
-
-.fourth {
+.reviews {
     padding: 95px 0 100px;
 }
 
-.fourth_box {
+.reviews_box {
     align-items: center;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    .reviews_wrapper {
+        width: 52%;
+
+        .reviews_name {
+            display: block;
+            @include text-styling('DM Sans', normal, 500, 30px, 36px);
+            color: #222222;
+            margin: 40px 0 5px;
+        }
+
+        .rating {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 73%;
+        }
+    }
+
+   .reviews_img {
+    display: inline-block;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: #F3FBF8;
+    position: relative;
+
+        .reviews_img_item {
+            position: absolute;
+            @extend %position;
+            border-radius: 50%;
+        }
+    }
 }
 
-.fourth_wrapper {
-     width: 52%;
-}
-
-.fourth_name {
-    display: block;
-    @include text-styling('DM Sans', normal, 500, 30px, 36px);
-    color: #222222;
-    margin: 40px 0 5px;
-}
-
-.fourth_text {
+.reviews_text {
     width: 90%;
-}
-
-.rating {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 73%;
 }
 
 .star_gold {
@@ -366,7 +376,7 @@
     background-image: url(../img/fourth_star-gold_half.svg);
 }
 
-.fourth_btn {
+.reviews_btn {
     width: 56px;
     height: 56px;
     border-radius: 50%;
@@ -387,61 +397,56 @@
    margin-left: 40px;
 }
 
-.fourth_img {
-    display: inline-block;
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-    background-color: #F3FBF8;
-    position: relative;
 
-    .fourth_img_item {
-        position: absolute;
-        @extend %position;
-    }
-}
 
-.fifth {
+.order {
     padding: 50px 0 150px;
 }
 
-.fifth_box {
+.order_box {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-}
 
-.fifth_img {
-    position: relative;
+    .order_img {
+        position: relative;
+    
+        .iphone_front {
+            position: absolute;
+            top: -30px;
+            left: 25px;
+            max-width: 240px;
+            }
 
-    .iphone_front {
-        position: absolute;
-        top: -30px;
-        left: 25px;
+        .iphone_back {
+            max-width: 210px;
+            width: 100%;
+        }
     }
-}
+    
 
-.fifth_wrapper {
-    width: 60%;
-}
-
-.fifth_btn {
-    background-color: #F3FBF8;
-    padding: 11px 24px;
-    border-radius: 20px;
-    cursor: pointer;
-    border: none;
-    @include text-styling('DM Sans', normal, 400, 18px, 18px);
-    color: #333333;
-    margin-bottom: 15px;
-}
-
-.fifth_link {
-    margin-top: 50px;
-
-    > a {
-        margin-right: 25px;
-    }
+    .order_wrapper {
+        width: 60%;
+    
+        .order_btn {
+            background-color: #F3FBF8;
+            padding: 11px 24px;
+            border-radius: 20px;
+            cursor: pointer;
+            border: none;
+            @include text-styling('DM Sans', normal, 400, 18px, 18px);
+            color: #333333;
+            margin-bottom: 15px;
+        }
+    
+        .order_link {
+            margin-top: 50px;
+        
+            > a {
+                margin-right: 25px;
+            }
+        }
+    }  
 }
 
 .footer {
