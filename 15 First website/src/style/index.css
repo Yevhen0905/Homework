@@ -1,5 +1,5 @@
 .hamburger {
-  padding: 15px 15px;
+  padding: 4px 4px;
   display: inline-block;
   cursor: pointer;
   transition-property: opacity, filter;
@@ -925,6 +925,7 @@ body {
     padding-top: 30px;
     top: -30px;
     right: 0;
+    gap: 20px;
     width: 75%;
     flex-direction: column;
     align-items: center;
