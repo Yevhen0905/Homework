@@ -1,0 +1,38 @@
+@use 'mixin';
+@use 'variables';
+
+.nav_item_link:hover::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    left: 0;
+    bottom: -3px;
+    border-bottom: 3px solid variables.$color-btn;;
+    opacity: 0.3;
+}
+
+.btn:hover {
+    color: #E54F3A;
+
+    &::after {
+        background-color: #E54F3A;
+    }
+}
+
+.promises_btn:hover {
+    border: 1px solid #E54F3A;
+}
+
+.promises_btn:hover .btn {
+    color: #E54F3A;
+
+    &::after {
+        background-color: #E54F3A;
+    }
+}
+
+// .reviews_item:hover {
+//     transform: scale(1.1);
+// }
+
+
