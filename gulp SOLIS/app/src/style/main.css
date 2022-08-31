@@ -414,7 +414,6 @@ body {
 .header {
   margin-top: 30px;
   margin-bottom: 10%;
-  backdrop-filter: blur(8px);
 }
 
 .header_wripper {

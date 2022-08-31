@@ -51,7 +51,7 @@ body {
 
 .text_reviews {
     @include mixin.width-box(100%, 400px);
-    margin-bottom: 8%;
+    margin-bottom: 4%;
 }
  
 .btn {
@@ -142,6 +142,7 @@ body {
     @include mixin.text-styling('Playfair Display', italic, 400, 20px, 20px);
     letter-spacing: 0.08em;
     color: #FFFFFF; 
+    margin-top: 25px;
 }
 
 .title_video {
@@ -160,6 +161,7 @@ body {
     @include mixin.text-styling('Lato', normal, 400, 16px, 26px);
     color: #FFFFFF;
     opacity: 0.8;
+    flex: 1 0;
 }
 
 .input {

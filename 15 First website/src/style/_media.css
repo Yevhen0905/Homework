@@ -1,12 +1,12 @@
 @media screen and (max-width: 992px) {
-  .text {
-    font-size: 15px;
-    line-height: 23px;
-  }
-
   .title {
     font-size: 40px;
     line-height: 48px;
+  }
+
+  .text {
+    font-size: 16px;
+    line-height: 24px;
   }
 
   .title_benefits {
@@ -39,24 +39,9 @@
     line-height: 40px;
   }
 
-  .text_item_reviews {
-    font-size: 13px;
-    line-height: 22px;
-  }
-
-  .quote_text {
-    font-size: 17px;
-    line-height: 17px;
-  }
-
-  .input {
-    font-size: 15px;
-    line-height: 17px;
-  }
-
   .btn {
-    font-size: 17px;
-    line-height: 17px;
+    font-size: 19px;
+    line-height: 19px;
   }
 
   .info_content {
@@ -66,6 +51,14 @@
     max-width: 85%;
   }
 }
+.reviews_wrapper {
+  gap: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
 .promises_wripper {
   max-width: 85%;
   gap: 30px;
@@ -86,11 +79,6 @@
 
   .contact {
     margin-bottom: 8%;
-  }
-
-  .text {
-    font-size: 12px;
-    line-height: 20px;
   }
 
   .title {
@@ -128,19 +116,9 @@
     line-height: 35px;
   }
 
-  .text_item_reviews {
-    font-size: 11px;
-    line-height: 20px;
-  }
-
-  .quote_text {
-    font-size: 13px;
-    line-height: 13px;
-  }
-
   .input {
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 17px;
+    line-height: 17px;
   }
 
   .btn {
@@ -149,8 +127,8 @@
   }
 
   .text_footer, .text_link {
-    font-size: 11px;
-    line-height: 21px;
+    font-size: 13px;
+    line-height: 23px;
   }
 
   .info_content {
@@ -201,16 +179,18 @@
   .nav_list {
     position: fixed;
     background-color: #85BBB1;
-    padding-top: 30px;
-    top: -30px;
+    top: 0;
     right: 0;
+    bottom: 0;
+    left: 0;
     gap: 20px;
-    width: 75%;
+    width: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
     transition: all 1s ease;
+    z-index: 1;
     transform: translateX(100%);
   }
   .nav_list.open {
@@ -228,6 +208,12 @@
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 0.2em;
+  }
+
+  .footer_wripper {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
 }
 @media screen and (max-width: 620px) {

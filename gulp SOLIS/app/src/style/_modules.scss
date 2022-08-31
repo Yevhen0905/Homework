@@ -4,7 +4,20 @@
 .header {
     margin-top: 30px;
     margin-bottom: 10%;
-    backdrop-filter: blur(8px);
+    position: relative;
+    // backdrop-filter: blur(8px);
+}
+
+.header::after {
+    content: '';
+    filter: blur(2px);
+    display: inline-block;
+    position: absolute;
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.244636) 24.1%, rgba(255, 255, 255, 0) 47.19%), rgba(255, 255, 255, 0.02);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
 
 .header_wripper {
@@ -211,28 +224,58 @@
 }
 
 .reviews_item {
-    @include mixin.width-box(100%, 32%);
-    position: relative; 
-    transition: all 0.5s ease;
-    box-shadow: 4px 4px 27px -10px rgba(0,0,0,0.75);
+   
+    max-width: 370px;
 
-    img {
-        width: 100%;
-        filter: brightness(0.6);
-        min-height: 340px;
+    &:nth-child(1) {
+        background: url(../img/reviews_image1.jpg) no-repeat;
+        background-size: cover;
     }
 
-    .reviews_item_text {
-        position: absolute;
-        top: 0;
-        left: 0;
-        margin: 7% 11%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        min-height: 300px;
-    }  
+    &:nth-child(2) {
+        background: url(../img/reviews_image2.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    &:nth-child(3) {
+        background: url(../img/reviews_image3.jpg) no-repeat;
+        background-size: cover;
+    }
 }
+
+.reviews_item_text {
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+
+
+// .reviews_item {
+//     @include mixin.width-box(100%, 32%);
+//     position: relative; 
+//     transition: all 0.5s ease;
+//     box-shadow: 4px 4px 27px -10px rgba(0,0,0,0.75);
+
+//     img {
+//         width: 100%;
+//         filter: brightness(0.6);
+//         min-height: 340px;
+//     }
+
+//     .reviews_item_text {
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         margin: 7% 11%;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: space-between;
+//         min-height: 300px;
+//     }  
+// }
 
 .contact_wripper {   
     @include mixin.flex_box(flex, space-between, wrap);
@@ -258,6 +301,8 @@
 .hamburger {
         display: none;
 }
+
+//  гамбургер вручну
 
 // .hamburger {
 //     display: none;
