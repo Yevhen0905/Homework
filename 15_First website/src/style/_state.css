@@ -1,0 +1,27 @@
+.nav_item_link:hover::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  left: 0;
+  bottom: -3px;
+  border-bottom: 3px solid #F1897B;
+  opacity: 0.3;
+}
+
+.btn:hover {
+  color: #E54F3A;
+}
+.btn:hover::after {
+  background-color: #E54F3A;
+}
+
+.promises_btn:hover {
+  border: 1px solid #E54F3A;
+}
+
+.promises_btn:hover .btn {
+  color: #E54F3A;
+}
+.promises_btn:hover .btn::after {
+  background-color: #E54F3A;
+}

@@ -5,20 +5,20 @@
     margin-top: 30px;
     margin-bottom: 10%;
     position: relative;
-    // backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
 }
 
-.header::after {
-    content: '';
-    filter: blur(2px);
-    display: inline-block;
-    position: absolute;
-    background: linear-gradient(270deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.244636) 24.1%, rgba(255, 255, 255, 0) 47.19%), rgba(255, 255, 255, 0.02);
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-}
+// .header::after {
+//     content: '';
+//     filter: blur(2px);
+//     display: inline-block;
+//     position: absolute;
+//     background: linear-gradient(270deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.244636) 24.1%, rgba(255, 255, 255, 0) 47.19%), rgba(255, 255, 255, 0.02);
+//     top: 0;
+//     left: 0;
+//     bottom: 0;
+//     right: 0;
+// }
 
 .header_wripper {
     @include mixin.flex_box(flex, space-between, wrap);
