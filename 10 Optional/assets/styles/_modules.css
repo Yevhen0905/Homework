@@ -67,8 +67,6 @@
 }
 .content_team {
   display: flex;
-  /* flex-wrap: wrap; */
-  /* justify-content: space-between; */
   column-gap: 30px;
 }
 .content_team_item {
@@ -196,6 +194,8 @@
   z-index: -1;
   top: 0;
   left: 0;
+  transition: all 0.7s ease;
+  animation-timing-function: l;
 }
 .card_social {
   width: 100%;
