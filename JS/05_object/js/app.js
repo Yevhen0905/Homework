@@ -20,87 +20,41 @@ let cars = {
     manufactur: 'Renault Group',
     model: 'megane',
     year: 2014,
-    averageSpeed: '50km/h',
-    volumeBak: '60 liters',
-    fuelLitres: '5 liters',
-    theDriver: '',
+    speed: 50,
+    volumeBak: 60,
+    fuelLitres: 5,
+    drivers: ['igor'],
+    yourCar: function() {
+        show(this)
+    },
+    addDrivers: function(item) {
+        this.drivers.push(item)
+    }, 
+    
+    isDriver: function(item) {
+        show(this.drivers.includes(item))
+    },
+
+    userСount: function(distance) {
+        let consumptionLiters = distance / 100 * this.fuelLitres;
+        let time = parseFloat(distance / this.speed);
+
+        if(time > 4) {
+           let restTime = Math.trunc(time / 4);
+           time += restTime
+        }
+
+       show(`Кількість палива ${consumptionLiters} літрів, час ${time} годин`)
+    }
 }
 
-///1
-        function infoCars(obj) {
-            show(obj);
-        };
+cars.yourCar();
 
-        infoCars(cars);
-///2
-        cars.theDriver = 'Evgen';
-///3
-// show(cars.year === undefined);
+cars.addDrivers('oleg');
 
+cars.isDriver('igor');
 
-        function isCheck(obj) {
-            for (let key in obj) {
-                return  console.log('true');
-            }
-            return show('false');
-        };
-
-        isCheck(cars.theDriver);
- 
-///4
-
-        let distance = '788km';
-        let restPeriod = 4;
-
-        //Розрахунок спочатку часу на подолання шляху
-        function timeOfMovement(a, b) {
-            return Math.round(parseFloat(a) / parseFloat(b));    //округляю найближче ціле число     
-        }
-
-        //+ з часом відпочинку
-        function timeMovementAndRelax(a, b) {
-            const localB = parseFloat(b);
-                if(localB === 0) {
-                        return 'Divider by zero'   //передбачення, на ноль не ділиться
-                }
-            return a + Math.floor(a / localB);  //округляю вниз до найближчого меншого числа    
-        }  
-        show(`Необхідний час руху ${timeMovementAndRelax(timeOfMovement(distance, cars['averageSpeed']), restPeriod)} годин`);
-        
-          
-           //ДРУГИЙ ВАРІАНТ
-        // let distance = '788km';
-        // let restPeriod = 4;
-        // let restBreak = '1hours';
-        //  //Розрахунок спочатку часу на подолання шляху
-        //  function timeOfMovement(a, b) {
-        //     return (parseFloat(a) / parseFloat(b));          
-        // }
-
-        // //+ з часом відпочинку
-        // function timeMovementAndRelax(a, b, c) {
-        //     const localB = parseFloat(b);
-        //     const localC = parseFloat(c);
-        //         if(localB === 0) {
-        //                 return 'Divider by zero'   //передбачення, на ноль не ділиться
-        //         }
-        //     return a + (a / localB * localC - localC);
-        // }  
-        // show(`Необхідний час руху ${timeMovementAndRelax(timeOfMovement(distance, cars['averageSpeed']), restPeriod, restBreak)} годин`);
-
-
-
-
-
-        //Розрахунок літрів
-        function counterLiters(a, b) {
-            return parseFloat(a) * parseFloat(b) / 100; 
-        }
-        show(`Витраченного палива на відстані ${distance} складає ${counterLiters(distance, cars['fuelLitres'])} літрів`)
-
-
-
-
+cars.userСount(1567);
 
 
 //NORMA
@@ -116,16 +70,38 @@ let cars = {
 //    того що користувач може передати 150 секунд, або 75 хвилин.
 
 let time = {
-    hours: 1,
-    minutes: 34,
-    seconds: 30,
+    hours: 20,
+    minutes: 59,
+    seconds: 45,
+    showTime: function () { 
+        show('Значення часу = ' + this.hours + ' годин, ' + this.minutes + ' хвилин, ' + this.seconds + ' секунд')
+    },                                                          // 1.
+    setSeconds: function (seconds) {
+        this.seconds += seconds;
+        if(this.seconds >= 60) {
+            this.hours = this.hours + Math.trunc(this.minutes / 60);
+            this.minutes = this.minutes + Math.trunc(this.seconds / 60);
+            this.seconds = this.seconds % 60;
+        }                                                       // 2.
+    }, 
+    setMinutes: function (minutes) {
+        this.minutes += minutes;
+        if(this.minutes >= 60) {
+            this.hours = this.hours + Math.trunc(this.minutes / 60);
+            this.minutes = this.minutes % 60;
+        }                                                       //3
+    },
+    setHours: function (hours) {
+        this.hours += hours;
+    }                                                           //4
 }
 
-function showTime() {
-    alert('Значення часу =' + this.hours + 'годин,' + this.minutes + 'хвилин,' + this.seconds + 'секунд')
-}  
- time.showTime();
+time.showTime();
+time.setSeconds(10);
+time.setMinutes(30);
+time.setHours(0);
 
+show('Значення часу = ' + time.hours + ' годин, ' + time.minutes + ' хвилин, ' + time.seconds + ' секунд');
 
 
 //MAX
@@ -136,3 +112,5 @@ function showTime() {
 // 3. Множення 2-х об'єктів-дробів.
 // 4. Ділення 2-х об'єктів-дробів.
 // 5. Скорочення об'єкта-дробу.
+
+

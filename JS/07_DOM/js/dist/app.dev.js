@@ -64,20 +64,19 @@ playList.forEach(function (item) {
   li.appendChild(span); //додав span в li
 
   domPlayList.appendChild(li); //додав li в ol
-}); // 2. Створити HTML-сторінку з кнопкою "Відкрити" і модальним вікном. 
-// На модальном вікні повинен бути текст і кнопка "Закрити". Спочатку 
-// модальне вікно не відображається. При кліку на кнопку "Відкрити" 
-// з'являється модальне вікно, на кнопку "Закрити" — зникає.
+}); // // // 2. Створити HTML-сторінку з кнопкою "Відкрити" і модальним вікном. 
+// // // На модальном вікні повинен бути текст і кнопка "Закрити". Спочатку 
+// // // модальне вікно не відображається. При кліку на кнопку "Відкрити" 
+// // // з'являється модальне вікно, на кнопку "Закрити" — зникає.
 
 function switchModal() {
   var modal = document.querySelector('.modal');
   modal.classList.toggle('open');
-} // function openModal() {
-//     const modal = document.querySelector('.modal');
-//     modal.classList.add('open');
-// }
-// function closeModal() {
-//     const modal = document.querySelector('.modal');
-//     modal.classList.remove('open');
-// }
-// 3.Створити HTML-сторінку зі світлофором і кнопкою, яка перемикає світлофор на наступний колір.
+} // // function openModal() {
+// //     const modal = document.querySelector('.modal');
+// //     modal.classList.add('open');
+// // }
+// // function closeModal() {
+// //     const modal = document.querySelector('.modal');
+// //     modal.classList.remove('open');
+// // }
