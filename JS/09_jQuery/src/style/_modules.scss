@@ -1,0 +1,238 @@
+@mixin text-styling($ff, $fs, $fw, $fz, $lh) {
+    font-family: $ff;
+    font-style: $fs;
+    font-weight: $fw;
+    font-size: $fz;
+    line-height: $lh;
+    }
+
+.hero {
+    width: 100%;
+    max-width: 1000px;
+    margin: 82px auto;
+    padding: 154px 0;
+    background-image: url(../img/photo.png);
+    background-repeat: no-repeat;
+    /* filter: contrast(0.4); */
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: #292D3E;
+        opacity: .7;
+    }
+}
+
+.card {
+    background-color: aliceblue;
+    position: relative;
+    margin: 0 auto;
+    max-width: 600px;
+    width: 100%;
+    // min-height: 552px;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+}
+
+.tabs_list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tabs_link {
+    @include text-styling('Lato', normal, 400, 16px, 28px);
+    text-transform: uppercase;
+    color: #8D91A3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.ui-widget-header {
+    border: none;
+    background-color: #2B3040;
+}
+
+
+.ui-widget.ui-widget-content {
+    border: none;
+}
+
+.ui-tabs .ui-tabs-nav li {
+    margin: 0;
+}
+
+.ui-tabs .ui-tabs-nav {
+    padding: 0;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+    border: 0;
+    background: none;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    border: none;
+    background-color: #2B3040;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+    margin: 0;
+    padding: 0;
+}
+
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+    padding: 28px;
+}
+
+.tabs_item a {
+    color: #8D91A3;
+}
+
+.tabs_link:hover {
+    color:  #fff;
+}
+
+////////////////////////////////////////////////
+.section {
+    display: flex;
+    justify-content: space-between;
+    max-width: 520px;
+    width: 100%;
+}
+
+#tabs-1, #tabs-2, #tabs-3 {
+    padding: 60px 40px;
+    background-color: #212534;
+}
+
+.content_img {
+    margin-top: 18px;
+}
+
+.content_img_item {
+    width: 160px;
+}
+
+/* Rating Star Widgets Style */
+.rating-stars ul {
+    list-style-type:none;
+    padding:0;
+    
+    -moz-user-select:none;
+    -webkit-user-select:none;
+}
+.rating-stars ul > li.star {
+    display:inline-block;
+    
+}
+
+// перемикання зірок  
+  /* Бездіяльний стан зірок */
+.rating-stars ul > li.star > i.fa {
+    font-size: 20px; /* Change the size of the stars */
+    color:#ccc; /* Color on idle state */
+}
+  
+  /* Зависаючий стан зірок */
+.rating-stars ul > li.star.hover > i.fa {
+    color: #FFDD3F;
+}
+  
+  /* Вибраний стан зірок*/
+.rating-stars ul > li.star.selected > i.fa {
+    color:#FFDD3F;
+}
+
+.star {
+    margin: 25px 5px 0 0;
+}
+/////
+.content_info {
+    width: 100%;
+    max-width: 320px;
+}
+
+.content_info_title {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.info_title_text {
+    @include text-styling('Lato', normal, 400, 32px, 32px);
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+.info_parag {
+    @include text-styling('Lato', normal, 400, 14px, 20px);
+    color: #FFFFFF;
+    display: block;
+}
+
+.content_text {
+    @include text-styling('Lato', normal, 400, 14px, 22px);
+    color: #B7BACD;
+    display: block;
+    max-width: 277px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.info_score {
+    @include text-styling('Lato', normal, 400, 20px, 22px);
+    color: #B7BACD;
+    display: block;
+    position: relative;
+}
+
+.percent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content_buy {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price_percent {
+    @include text-styling('Lato', normal, 400, 12px, 20px);
+    color: #FFDD3F;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.price_sum {
+    @include text-styling('Lato', normal, 400, 32px, 32px);
+    color: #FFFFFF;
+}
+
+.btn_buy {
+    @include text-styling('Lato', normal, 400, 16px, 20px);
+    text-transform: uppercase;
+    color: #FFF;
+    padding: 20px 30px;
+    background-color: #13E28D;
+    border-radius: 2px;
+}
+
+.desc {
+    @include text-styling('Lato', normal, 400, 14px, 22px);
+    color: #B7BACD;
+    display: block;
+    width: 100%;
+}

@@ -1,0 +1,47 @@
+/* lato-regular - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/lato/lato-v23-latin-regular.woff2") format("woff2"), url("../fonts/lato/lato-v23-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+body, html, h1, h2, h3, h4, h5, h6, ul {
+  width: 100%;
+  font-size: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+p, button {
+  margin: 0;
+  padding: 0;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #2B3040;
+}
