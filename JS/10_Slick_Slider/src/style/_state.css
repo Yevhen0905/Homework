@@ -1,0 +1,28 @@
+.nav_link:hover {
+  background-color: #F16A50;
+  color: #FFFFFF;
+}
+
+.footer_nav_link:hover {
+  color: #F16A50;
+}
+
+.social_icon:hover {
+  color: #F16A50;
+}
+
+.products_btn:hover {
+  border: 2px solid #F16A50;
+  background-color: #F16A50;
+  color: #F8F1EA;
+}
+
+.slider_card_item:hover {
+  border: 1px solid #F16A50;
+}
+
+.btn_link:hover {
+  border: 2px solid #F16A50;
+  background-color: #F16A50;
+  color: #F8F1EA;
+}
