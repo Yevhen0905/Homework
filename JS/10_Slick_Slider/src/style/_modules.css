@@ -42,6 +42,7 @@
   line-height: 24px;
   color: #000000;
   text-transform: capitalize;
+  height: 100%;
 }
 
 .active {

@@ -141,6 +141,7 @@ ul, li {
   line-height: 24px;
   color: #000000;
   text-transform: capitalize;
+  height: 100%;
 }
 
 .active {
@@ -424,6 +425,10 @@ ul, li {
   text-align: center;
 }
 
+.active {
+  border: 1px solid #F16A50;
+}
+
 .nav_link:hover {
   background-color: #F16A50;
   color: #FFFFFF;
@@ -451,6 +456,26 @@ ul, li {
   border: 2px solid #F16A50;
   background-color: #F16A50;
   color: #F8F1EA;
+}
+
+.slick_item_prev::before {
+  content: "";
+  display: block;
+  background-image: url(../img/prev.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 40px;
+  height: 74px;
+}
+
+.slick_item_next::before {
+  content: "";
+  display: block;
+  background-image: url(../img/prev.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 40px;
+  height: 74px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -597,6 +622,18 @@ ul, li {
     width: 12px;
     height: 12px;
   }
+
+  .slick_item_prev::before {
+    content: "";
+    width: 16px;
+    height: 30px;
+  }
+
+  .slick_item_next::before {
+    content: "";
+    width: 16px;
+    height: 30px;
+  }
 }
 @media screen and (max-width: 668px) {
   .nav_list {
@@ -604,8 +641,8 @@ ul, li {
   }
 
   .slider_block_title {
-    top: 40px;
-    right: 40px;
+    top: 16px;
+    right: 30px;
   }
 }
 @media screen and (max-width: 568px) {

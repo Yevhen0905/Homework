@@ -142,6 +142,18 @@
     width: 12px;
     height: 12px;
   }
+
+  .slick_item_prev::before {
+    content: "";
+    width: 16px;
+    height: 30px;
+  }
+
+  .slick_item_next::before {
+    content: "";
+    width: 16px;
+    height: 30px;
+  }
 }
 @media screen and (max-width: 668px) {
   .nav_list {
@@ -149,8 +161,8 @@
   }
 
   .slider_block_title {
-    top: 40px;
-    right: 40px;
+    top: 16px;
+    right: 30px;
   }
 }
 @media screen and (max-width: 568px) {

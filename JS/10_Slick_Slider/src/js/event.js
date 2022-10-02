@@ -12,3 +12,5 @@ $(function() {
 //         console.log(e.target);
 //     })
 // }
+
+// changeStatus()

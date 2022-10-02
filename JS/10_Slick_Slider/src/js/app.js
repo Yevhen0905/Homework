@@ -11,8 +11,8 @@ $(function() {
 $(function() {
     $('.slider_products').slick({
         slidesToShow: 5,
-        nextArrow: '<button type="button" class="slick-prev slick_arrow"><img src="./img/prev.svg"/></button>',
-        prevArrow: '<button type="button" class="slick-next slick_arrow"><img src="./img/prev.svg"/></button>',       
+        nextArrow: '<button type="button" class="slick-prev slick_arrow"><span class="slick_item_prev"></span></button>',
+        prevArrow: '<button type="button" class="slick-next slick_arrow"><span class="slick_item_next"></span></button>',       
         responsive: [
             {
               breakpoint: 1024, //екран менше 1024
@@ -48,8 +48,8 @@ $(function() {
 $(function() {
     $('.slider_partners').slick({
         slidesToShow: 9,
-        nextArrow: '<button type="button" class="slick-prev slick_arrow"><img src="./img/prev.svg"/></button>',
-        prevArrow: '<button type="button" class="slick-next slick_arrow"><img src="./img/prev.svg"/></button>',
+        nextArrow: '<button type="button" class="slick-prev slick_arrow"><span class="slick_item_prev"></span></button>',
+        prevArrow: '<button type="button" class="slick-next slick_arrow"><span class="slick_item_next"></span></button>',
         responsive: [
             {
               breakpoint: 1024, //екран менше 1024
