@@ -21,6 +21,22 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-phone:before {
+  content: "";
+}
+
+.icon-location:before {
+  content: "";
+}
+
+.icon-clock:before {
+  content: "";
+}
+
+.icon-drawer2:before {
+  content: "";
+}
+
 .icon-facebook:before {
   content: "";
 }
@@ -33,14 +49,40 @@
   content: "";
 }
 
-.icon-youtube:before {
-  content: "";
+body, html, h1, h2, h3, h4, h5, h6 {
+  width: 100%;
+  font-size: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  line-height: 1;
 }
 
-.icon-pinterest2:before {
-  content: "";
+p, button {
+  margin: 0;
+  padding: 0;
 }
 
-.icon-circle-down:before {
-  content: "";
+body * {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+}
+
+button {
+  font-family: inherit;
+}
+
+ul {
+  list-style: none;
 }

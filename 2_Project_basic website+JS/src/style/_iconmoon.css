@@ -21,6 +21,22 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-phone:before {
+  content: "";
+}
+
+.icon-location:before {
+  content: "";
+}
+
+.icon-clock:before {
+  content: "";
+}
+
+.icon-drawer2:before {
+  content: "";
+}
+
 .icon-facebook:before {
   content: "";
 }
@@ -31,16 +47,4 @@
 
 .icon-twitter:before {
   content: "";
-}
-
-.icon-youtube:before {
-  content: "";
-}
-
-.icon-pinterest2:before {
-  content: "";
-}
-
-.icon-circle-down:before {
-  content: "";
 }

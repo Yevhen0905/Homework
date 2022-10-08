@@ -1,0 +1,135 @@
+@charset "UTF-8";
+.nav_menu_item {
+  position: relative;
+}
+.nav_menu_item::before {
+  content: "";
+  display: block;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  top: 5px;
+  left: -20px;
+}
+
+.nav_menu_item:hover::before {
+  background-color: #fff;
+}
+
+.project_trade::before {
+  content: "";
+  position: absolute;
+  width: 585px;
+  height: 470px;
+  background-color: #55B7FF;
+  z-index: -1;
+  top: -55px;
+  left: -176px;
+}
+
+.project_commerce::before {
+  content: "";
+  position: absolute;
+  width: 585px;
+  height: 470px;
+  background-color: #7E5AFF;
+  top: -55px;
+  right: -174px;
+  z-index: -1;
+}
+
+.we_do::before {
+  content: "";
+  border-top: 1px solid #2C4058;
+  width: 100px;
+  display: block;
+  margin: 0 auto 30px;
+}
+
+.latest_news::before {
+  content: "";
+  border-top: 1px solid #FFFFFF;
+  width: 100px;
+  display: block;
+  margin: 0 auto 30px;
+}
+
+.contact_title::before {
+  content: "";
+  border-top: 1px solid #2C4058;
+  width: 100px;
+  display: block;
+  margin: 0 auto 30px;
+}
+
+.slick_item_prev, .slick_item_next {
+  width: 40px;
+  height: 40px;
+}
+
+.slick_item_prev::before {
+  content: "";
+  display: block;
+  background-image: url(../img/arrowRight.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+}
+
+.slick_item_next::before {
+  content: "";
+  display: block;
+  background-image: url(../img/Left.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+}
+
+.icon-phone:before {
+  content: "";
+  color: #7E5AFF;
+  margin-right: 10px;
+}
+
+.icon-drawer2:before {
+  content: "";
+  color: #7E5AFF;
+  margin-right: 10px;
+}
+
+.icon-location:before {
+  content: "";
+  color: #7E5AFF;
+  margin-right: 10px;
+}
+
+.icon-clock:before {
+  content: "";
+  color: #7E5AFF;
+  margin-right: 10px;
+}
+
+.nav_menu_item:hover {
+  transform: scale(1.07);
+  font-weight: 600;
+}
+
+.nav_social_icon:hover {
+  transform: scale(1.07);
+}
+
+.btn_project:hover {
+  background-color: #55B7FF;
+  transform: scale(1.07);
+}
+
+.btn_contact:hover {
+  background-color: #55B7FF;
+  transform: scale(1.07);
+}

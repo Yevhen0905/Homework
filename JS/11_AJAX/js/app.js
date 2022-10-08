@@ -159,9 +159,8 @@ function showInfo(id) {
         });
 }     
 
-
-/// є проблема,під час запиту не хоче виводити в модалку інфу, показує 
-//{Response: "False", Error: "Incorrect IMDb ID."}
+//  є проблема,під час запиту не хоче виводити в модалку інфу, показує 
+// {Response: "False", Error: "Incorrect IMDb ID."}
 // Error
 // : 
 // "Incorrect IMDb ID."

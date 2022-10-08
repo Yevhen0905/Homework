@@ -1,0 +1,270 @@
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  position: relative;
+  background: linear-gradient(243.43deg, #7E5AFF 16.9%, #55B7FF 83.27%);
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding-top: 50px;
+}
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: url(../img/header_Mask.png);
+  background-repeat: no-repeat;
+}
+
+.projects {
+  padding: 100px 0 150px;
+}
+
+.news_section {
+  padding: 120px 0;
+  position: relative;
+  background-image: url(../img/new_Background.png);
+  background-repeat: no-repeat;
+}
+.news_section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: url(../img/news_city.png);
+  background-repeat: no-repeat;
+}
+
+.new_slider {
+  max-width: 1370px;
+  width: 100%;
+  padding: 0 100px;
+  margin: 0 auto;
+}
+
+.gallery {
+  padding: 150px 0;
+}
+
+.footer {
+  position: relative;
+  background-image: url(../img/footer_Background.png);
+  background-repeat: no-repeat;
+  padding: 203px 0 234px;
+}
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: url(../img/footer_scott-webb.png);
+  background-repeat: no-repeat;
+}
+
+.btn_project {
+  padding: 16px 41px;
+  background-color: inherit;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  border: 1px solid #2C4058;
+  cursor: pointer;
+}
+
+.btn_gallery {
+  padding: 16px 57px;
+}
+
+.header_btn {
+  border: none;
+  outline: none;
+  width: 44px;
+  position: absolute;
+  background-color: inherit;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.btn_contact {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
+  padding: 12px 34px;
+  background-color: inherit;
+  cursor: pointer;
+  border: none;
+  border: 1px solid #2C4058;
+}
+
+.nav_link {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.header_title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 98px;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.3em;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.title_text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 54px;
+  text-align: center;
+  color: #2C4058;
+  text-transform: uppercase;
+}
+
+.project_content_subject {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27px;
+  color: #2C4058;
+}
+
+.content_text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #2C4058;
+  margin-bottom: 40px;
+}
+
+.location {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+  display: block;
+  margin-top: 60px;
+}
+
+/* Set the size of the div element that contains the map */
+#map {
+  height: 700px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
+
+.slider_card_title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  color: #2C4058;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.slider_text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #2C4058;
+  margin-bottom: 40px;
+}
+
+.author_name {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #2C4058;
+  text-transform: uppercase;
+}
+
+.author_date {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #55B7FF;
+}
+
+.footer_text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  display: block;
+  color: #FFF;
+  margin-top: 40px;
+}
+
+input {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
+  border: none;
+  border-bottom: 1px solid #2C4058;
+  padding-bottom: 15px;
+}
+
+.contact_item {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
+}
