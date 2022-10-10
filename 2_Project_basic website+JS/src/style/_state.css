@@ -1,6 +1,7 @@
 @charset "UTF-8";
 .nav_menu_item {
   position: relative;
+  transition: all 0.5s ease;
 }
 .nav_menu_item::before {
   content: "";

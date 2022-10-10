@@ -87,6 +87,10 @@ ul {
   list-style: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   max-width: 1200px;
   width: 100%;
@@ -110,6 +114,7 @@ ul {
   right: 0;
   background-image: url(../img/header_Mask.png);
   background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 .projects {
@@ -119,7 +124,7 @@ ul {
 .news_section {
   padding: 120px 0;
   position: relative;
-  background-image: url(../img/new_Background.png);
+  background: linear-gradient(237.1deg, #24CCFA 11.16%, #3C7FD4 89.18%);
   background-repeat: no-repeat;
 }
 .news_section::before {
@@ -131,6 +136,7 @@ ul {
   right: 0;
   background-image: url(../img/news_city.png);
   background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 .new_slider {
@@ -146,7 +152,7 @@ ul {
 
 .footer {
   position: relative;
-  background-image: url(../img/footer_Background.png);
+  background: linear-gradient(251.06deg, #7E5AFF -2.19%, #55B7FF 103.21%);
   background-repeat: no-repeat;
   padding: 203px 0 234px;
 }
@@ -159,6 +165,7 @@ ul {
   right: 0;
   background-image: url(../img/footer_scott-webb.png);
   background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 .btn_project {
@@ -172,6 +179,7 @@ ul {
   color: #000000;
   border: 1px solid #2C4058;
   cursor: pointer;
+  transition: all 0.5s ease;
 }
 
 .btn_gallery {
@@ -202,6 +210,7 @@ ul {
   cursor: pointer;
   border: none;
   border: 1px solid #2C4058;
+  transition: all 0.5s ease;
 }
 
 .nav_link {
@@ -381,6 +390,7 @@ input {
   width: 40px;
   height: 40px;
   position: relative;
+  transition: all 0.5s ease;
 }
 
 .nav_social_icon:not(.nav_social_icon:last-child) {
@@ -397,18 +407,18 @@ input {
 
 .header_wripper {
   text-align: center;
-  padding-top: 1.7%;
+  padding-top: 2.4%;
 }
 
-.header_slider ul.slick-dots {
+.fade ul.slick-dots {
   position: absolute;
   gap: 40px;
   display: flex;
   flex-direction: column;
   padding: 0;
   margin: 0;
-  top: 45%;
-  right: -50px;
+  right: 50px;
+  top: 40%;
 }
 
 .project_trade_image, .project_commerce_image {
@@ -678,12 +688,13 @@ input {
 }
 .top:hover {
   color: #fff;
-  background-color: #ff7fd4;
+  background-color: #0c070b;
   opacity: 1;
 }
 
 .nav_menu_item {
   position: relative;
+  transition: all 0.5s ease;
 }
 .nav_menu_item::before {
   content: "";

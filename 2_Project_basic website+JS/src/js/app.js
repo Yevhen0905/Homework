@@ -1,9 +1,12 @@
 
 
 $(function() {
-  $('.header_slider').slick({
+  $('.fade').slick({
       dots: true, 
       infinite: true,
+      speed: 500,
+      fade: true,
+      cssEase: 'linear',
       prevArrow: false,
       nextArrow: false
   });
@@ -79,17 +82,5 @@ L.marker([47.799693589676785, 35.13418233831213]).addTo(map)
 // scroll up
 
 
-$(function() {
-    $('.top').click(function() {
-        $('html, body').stop().animate({scrollTop: 0}, 'slow', 'swing');
-      });
-      $(window).scroll(function() {
-        if ($(this).scrollTop() > $(window).height()) {
-          $('.top').addClass("active");
-        } else {
-          $('.top').removeClass("active");
-        };
-    });
-})  
 
    

@@ -1,5 +1,6 @@
 .nav_menu_item {
     position: relative;
+    transition: all .5s ease;
     &::before {
     content: '';
     display: block;

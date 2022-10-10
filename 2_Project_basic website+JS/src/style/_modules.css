@@ -21,6 +21,7 @@
   width: 40px;
   height: 40px;
   position: relative;
+  transition: all 0.5s ease;
 }
 
 .nav_social_icon:not(.nav_social_icon:last-child) {
@@ -37,18 +38,18 @@
 
 .header_wripper {
   text-align: center;
-  padding-top: 1.7%;
+  padding-top: 2.4%;
 }
 
-.header_slider ul.slick-dots {
+.fade ul.slick-dots {
   position: absolute;
   gap: 40px;
   display: flex;
   flex-direction: column;
   padding: 0;
   margin: 0;
-  top: 45%;
-  right: -50px;
+  right: 50px;
+  top: 40%;
 }
 
 .project_trade_image, .project_commerce_image {
@@ -318,6 +319,6 @@
 }
 .top:hover {
   color: #fff;
-  background-color: #ff7fd4;
+  background-color: #0c070b;
   opacity: 1;
 }

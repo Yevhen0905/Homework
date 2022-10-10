@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   max-width: 1200px;
   width: 100%;
@@ -21,6 +25,7 @@
   right: 0;
   background-image: url(../img/header_Mask.png);
   background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 .projects {
@@ -30,7 +35,7 @@
 .news_section {
   padding: 120px 0;
   position: relative;
-  background-image: url(../img/new_Background.png);
+  background: linear-gradient(237.1deg, #24CCFA 11.16%, #3C7FD4 89.18%);
   background-repeat: no-repeat;
 }
 .news_section::before {
@@ -42,6 +47,7 @@
   right: 0;
   background-image: url(../img/news_city.png);
   background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 .new_slider {
@@ -57,7 +63,7 @@
 
 .footer {
   position: relative;
-  background-image: url(../img/footer_Background.png);
+  background: linear-gradient(251.06deg, #7E5AFF -2.19%, #55B7FF 103.21%);
   background-repeat: no-repeat;
   padding: 203px 0 234px;
 }
@@ -70,6 +76,7 @@
   right: 0;
   background-image: url(../img/footer_scott-webb.png);
   background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 .btn_project {
@@ -83,6 +90,7 @@
   color: #000000;
   border: 1px solid #2C4058;
   cursor: pointer;
+  transition: all 0.5s ease;
 }
 
 .btn_gallery {
@@ -113,6 +121,7 @@
   cursor: pointer;
   border: none;
   border: 1px solid #2C4058;
+  transition: all 0.5s ease;
 }
 
 .nav_link {
