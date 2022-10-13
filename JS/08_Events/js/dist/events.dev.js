@@ -56,10 +56,13 @@ function generetaTable() {
     div.append(distanceSpan);
     document.querySelector('.table').append(div);
   });
-} // функція сортування
+} // function clearTable() {
+//     table.innerHTML = '';
+// };
+// функція сортування
 
 
-function sortArr(a, b) {
+function sortArr(sortСolumn) {
   var keyA = a[item];
   var keyB = b[item];
   if (keyA < keyB) return -1;
@@ -78,6 +81,7 @@ sortHeader.forEach(function (el) {
     var sortKey = targetItem.dataset.sort; // знайшли ключ для подальших маніпуляцій      
 
     distanceToTheCity.sort(sortArr(sortKey));
+    clearTable();
     generetaTable();
   });
 });

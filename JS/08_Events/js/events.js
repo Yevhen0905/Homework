@@ -73,10 +73,12 @@ function generetaTable() {
     })
 }
 
-
+// function clearTable() {
+//     table.innerHTML = '';
+// };
 // функція сортування
 
-function sortArr(a, b) {
+function sortArr(sortСolumn) {
     let keyA = a[item];
     let keyB = b[item];
 
@@ -95,6 +97,7 @@ sortHeader.forEach(el => {
         //  console.log(targetItem.dataset.sort); //перевірка таргета для ключа
         const sortKey = targetItem.dataset.sort; // знайшли ключ для подальших маніпуляцій      
         distanceToTheCity.sort(sortArr(sortKey));
+        clearTable(); 
         generetaTable();
     })
 });

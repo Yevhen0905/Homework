@@ -3,6 +3,7 @@ function pageLoader (page) {
   $.get(`pages/${page}.html`, res => {
     // console.log(res);
        $('#main_content').html(res);
+       getLocalFilmName();                                // запускаємо тут функцію для збереження в инпути назви фільму
   })
 }
 
@@ -84,14 +85,34 @@ function managePagination(results) {          // напомнювати results_
    $('.last-page-link').text(totalPage).attr('href', totalPage);    // ставим останню сторінку + замінили в ашке хреф на кількість сторінок 418 
 }
 
+//////////////////////////// отримання в импут автоматично назву фільму для пошуку
+function setLocalFilmName(filmName) {                     //функція запросу з localStorage
+    localStorage.setItem('film', filmName);                    // яка назва і що буде зберігатися
+}
+
+function getLocalFilmName() {                            // повертає з localStorage останній пошук
+   const film = localStorage.getItem('film');
+  //  console.log(film);
+   if(film) {
+    $('#search').val(film);
+    findAFilm()
+   }
+}
+/////////////////////////////////////
+
  
 function findAFilm() {                       //пошук фильму // бере значення поля search, відсилає запит, будує нам пагінацію, показує помилки
     const query = $('#search').val();   
     // console.log(query);                  /// отримуємо ведене в инпут
 
+    query && setLocalFilmName(query);
+    // if(query) {
+    //   setLocalFilmName(query)
+    // }                                                  // викликаємо функцію
+
     $.ajax(URL + `&s=${query}&page=${PAGE}`)         /// url + s параметр назви = вводим назву фільму + параметр сторніки який дорівнює по дефолту 1
         .done(res => {         
-            // console.log(res);             //пошук по назві, отпримали список фільмів в масиві, по замовчуванню сервер не віддає нм всі результати//приходять результати для сторінки номер один, щоб отримати для другої сторінки треба добавити параметр "page"
+            console.log(res);             //пошук по назві, отпримали список фільмів в масиві, по замовчуванню сервер не віддає нм всі результати//приходять результати для сторінки номер один, щоб отримати для другої сторінки треба добавити параметр "page"
             if(res.Search && res.totalResults > 0) {                   //полу Search чи є фільм(щоб не було помилки) і  якщо має довжину+ перевіряємо чи є totalResults
                 createMovieList(res.Search); 
   

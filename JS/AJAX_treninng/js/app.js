@@ -71,64 +71,64 @@
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////// axios
-// const URL = 'http://www.omdbapi.com/?i=tt3896198&apikey=32fdeb21';
+const URL = 'http://www.omdbapi.com/?i=tt3896198&apikey=32fdeb21';
 
-// // axios(URL + '&t=Star') 
-// //         .then(res => {         
-// //             // console.log(res);
-// //             createMovieList([res.data]);  
-// //         })
-// //         .catch(err => {               
-// //             console.log(err);
-// //         })
+axios(URL + '&t=Star') 
+        .then(res => {         
+            // console.log(res);
+            createMovieList([res.data]);  
+        })
+        .catch(err => {               
+            console.log(err);
+        })
 
-// let movieType = 'movie';
+let movieType = 'movie';
 
 
-// function createMovieList(list) {
-//    // console.log(list);
+function createMovieList(list) {
+   // console.log(list);
 
-//    list.forEach(el => {                 
-//     const ul = document.getElementById('list');
-//     const li = document.createElement('li'); 
-//     const img = document.createElement('img');
-//     img.setAttribute('src', el.Poster);
+   list.forEach(el => {                 
+    const ul = document.getElementById('list');
+    const li = document.createElement('li'); 
+    const img = document.createElement('img');
+    img.setAttribute('src', el.Poster);
 
-//     li.textContent = el.Title;
+    li.textContent = el.Title;
 
-//     ul.append(img);
-//     ul.append(li); 
-//    });
-// }             
+    ul.append(img);
+    ul.append(li); 
+   });
+}             
 
-// function findAFilm() {
-//     const query = document.getElementById('search').value;
-//     console.log(query);
-//     axios(URL + `&t=${query}&type=${movieType}`) 
-//         .then(res => {         
-//             // console.log(res);
-//             createMovieList([res.data]);  
-//         })
-//         .catch(err => {               
-//             console.log(err);
-//         })    
-// }
+function findAFilm() {
+    const query = document.getElementById('search').value;
+    console.log(query);
+    axios(URL + `&t=${query}&type=${movieType}`) 
+        .then(res => {         
+            // console.log(res);
+            createMovieList([res.data]);  
+        })
+        .catch(err => {               
+            console.log(err);
+        })    
+}
 
-// function changeType(e) {
-//     // console.log(e.target.value);
-//     movieType = e.target.value;
-// } 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+function changeType(e) {
+    // console.log(e.target.value);
+    movieType = e.target.value;
+} 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // jQuery
 
-$(function(){
-    $.ajax('data/data.json')
-    .done(res => {
-      console.log(res);;
-    })
-    .fail(err => {
-      console.log(err);;
-    });
-    // $.get('data/data.json', res => console.log(res)) // швидко отримати дані, робиться запит в один рядок
-});
+// $(function(){
+//     $.ajax('data/data.json')
+//     .done(res => {
+//       console.log(res);;
+//     })
+//     .fail(err => {
+//       console.log(err);;
+//     });
+//     // $.get('data/data.json', res => console.log(res)) // швидко отримати дані, робиться запит в один рядок
+// });
