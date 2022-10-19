@@ -43,7 +43,7 @@ const URL = 'http://www.omdbapi.com/?i=tt3896198&apikey=32fdeb21';
 let PAGE = 1;  // перша сторінка пагінатора
 
 function createMovieList(list) {
-    // console.log(list);   //дивимося, що буде отримувати функція
+    console.log(list);   //дивимося, що буде отримувати функція
     let html = ''; 
     list.forEach(el => {                       // пройдемося по кожному елементу масива і вивести картку 
         // console.log(el);

@@ -56,11 +56,13 @@ function generetaTable() {
     div.append(distanceSpan);
     document.querySelector('.table').append(div);
   });
-} // function clearTable() {
-//     table.innerHTML = '';
-// };
-// функція сортування
+}
 
+function clearTable() {
+  table.innerHTML = '';
+}
+
+; // функція сортування
 
 function sortArr(sortСolumn) {
   var keyA = a[item];
@@ -70,9 +72,7 @@ function sortArr(sortСolumn) {
   return 0;
 }
 
-; // distanceToTheCity.sort(sortArr());
-// console.log(distanceToTheCity);
-
+;
 var sortHeader = document.querySelectorAll('.sortHeader');
 sortHeader.forEach(function (el) {
   el.addEventListener('click', function (e) {

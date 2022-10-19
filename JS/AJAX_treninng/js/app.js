@@ -73,16 +73,16 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////// axios
 const URL = 'http://www.omdbapi.com/?i=tt3896198&apikey=32fdeb21';
 
-axios(URL + '&t=Star') 
-        .then(res => {         
-            // console.log(res);
-            createMovieList([res.data]);  
-        })
-        .catch(err => {               
-            console.log(err);
-        })
+// axios(URL + '&t=Star') 
+//         .then(res => {         
+//             // console.log(res);
+//             createMovieList([res.data]);  
+//         })
+//         .catch(err => {               
+//             console.log(err);
+//         })
 
-let movieType = 'movie';
+// let movieType = 'movie';
 
 
 function createMovieList(list) {

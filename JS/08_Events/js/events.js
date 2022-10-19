@@ -73,9 +73,9 @@ function generetaTable() {
     })
 }
 
-// function clearTable() {
-//     table.innerHTML = '';
-// };
+function clearTable() {
+    table.innerHTML = '';
+};
 // функція сортування
 
 function sortArr(sortСolumn) {
@@ -86,9 +86,7 @@ function sortArr(sortСolumn) {
     if (keyA > keyB) return 1;
     return 0;
 };
-// distanceToTheCity.sort(sortArr());
-// console.log(distanceToTheCity);
-  
+ 
 
 const sortHeader = document.querySelectorAll('.sortHeader');
 sortHeader.forEach(el => {
