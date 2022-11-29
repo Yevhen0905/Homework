@@ -4,8 +4,7 @@ var anchors = document.querySelectorAll('.anchor');
 anchors.forEach(function (el) {
   //el - це ашки, будуть зберігатися по черзі
   el.addEventListener('click', function (e) {
-    e.preventDefault();
-    console.log(e.target.getAttribute('href')); //який елемент натиснули і за допомогою   getAttribute('href') отримати куди йдемо                  
+    e.preventDefault(); // console.log(e.target.getAttribute('href'));                   //який елемент натиснули і за допомогою   getAttribute('href') отримати куди йдемо                  
 
     var targetSelector = e.target.getAttribute('href'); // отримали по чому клікаємо і куда рухаємся його селектор
 

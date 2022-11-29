@@ -3,7 +3,7 @@ const anchors = document.querySelectorAll('.anchor');
 anchors.forEach(el => {                         //el - це ашки, будуть зберігатися по черзі
     el.addEventListener('click',e => {     
         e.preventDefault()  
-        console.log(e.target.getAttribute('href'));                   //який елемент натиснули і за допомогою   getAttribute('href') отримати куди йдемо                  
+        // console.log(e.target.getAttribute('href'));                   //який елемент натиснули і за допомогою   getAttribute('href') отримати куди йдемо                  
         const targetSelector = e.target.getAttribute('href');            // отримали по чому клікаємо і куда рухаємся його селектор
 
         const targetEndElemant = document.querySelector(targetSelector);    //місце куди скролить елемент
