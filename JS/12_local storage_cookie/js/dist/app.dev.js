@@ -17,11 +17,11 @@ function createWeather(data) {
 var URL = 'https://api.openweathermap.org/data/2.5/weather?lang=ua&appid=231749eaa327f7777cac2d7ad9c5586e';
 
 function findWeather() {
-  var query = $('#search').val();
-  console.log(query);
+  var query = $('#search').val(); // console.log(query);
+
   $.ajax(URL + "&q=".concat(query)).done(function (res) {
     // console.log(res);  
-    createWeather(res);
+    createWeather(res.data);
   }).fail(function (err) {
     // console.log(err);   
     showError(err.Error);

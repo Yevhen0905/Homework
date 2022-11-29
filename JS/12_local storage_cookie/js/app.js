@@ -37,12 +37,12 @@ const URL = 'https://api.openweathermap.org/data/2.5/weather?lang=ua&appid=23174
 
 function findWeather() {
       const query = $('#search').val();
-      console.log(query);
+      // console.log(query);
 
       $.ajax(URL + `&q=${query}`)        
         .done(res => {         
             // console.log(res);  
-            createWeather(res) 
+            createWeather(res.data) 
         })
         .fail(err => {               
             // console.log(err);   
