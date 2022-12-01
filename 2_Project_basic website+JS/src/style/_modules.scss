@@ -304,31 +304,31 @@
 }
 
 
-// кнопка скроллу до початку
-.top {
-	position: fixed;
-	bottom: 25px;
-	background-color: #E0E0E0;
-	border-radius: 10em;
-	color: rgb(51, 50, 50);
-	font-size: 26px;
-	width: 50px;
-	height: 50px;
-	line-height: 50px;
-	text-align: center;
-	cursor: pointer;
-	transition: all .25s ease;
-	right: -100px;
-	z-index: 12;
-	opacity: .5;
+// // кнопка скроллу до початку
+// .top {
+// 	position: fixed;
+// 	bottom: 25px;
+// 	background-color: #E0E0E0;
+// 	border-radius: 10em;
+// 	color: rgb(51, 50, 50);
+// 	font-size: 26px;
+// 	width: 50px;
+// 	height: 50px;
+// 	line-height: 50px;
+// 	text-align: center;
+// 	cursor: pointer;
+// 	transition: all .25s ease;
+// 	right: -100px;
+// 	z-index: 12;
+// 	opacity: .5;
 
-	&.active {
-		right: 30px;
-       }
-	&:hover {
-		color: #fff;
-		background-color: rgb(12, 7, 11);
-		opacity: 1;
-    }
-}
+// 	&.active {
+// 		right: 30px;
+//        }
+// 	&:hover {
+// 		color: #fff;
+// 		background-color: rgb(12, 7, 11);
+// 		opacity: 1;
+//     }
+// }
 	  
