@@ -137,4 +137,4 @@ function addToDo() {
     createToDo();  //ще раз запускаємо щоб добавлялось в туду
 } 
 
-createToDo();  
+createToDo();
